@@ -19,8 +19,8 @@ const PageLayout = ({ children, pageName, pageTitle, pageSubtitle, heroImage, hi
         {/* Décorations (texte vertical + ligne) - masquées si hideDecorations = true */}
         {!hideDecorations && (
           <>
-            {/* Texte vertical - positionné à 70% de la hauteur */}
-            <div className="hidden xl:block fixed left-4 xl:left-8 z-40" style={{ top: '70vh' }}>
+            {/* Texte vertical - visible uniquement sur très grands écrans */}
+            <div className="hidden 2xl:block absolute left-8 z-20" style={{ top: '200px' }}>
               <h2 
                 className="text-2xl font-bold text-gray-300 tracking-widest" 
                 style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
@@ -29,24 +29,31 @@ const PageLayout = ({ children, pageName, pageTitle, pageSubtitle, heroImage, hi
               </h2>
             </div>
 
-            {/* Ligne gauche avec segment coloré - commence après le hero */}
-            <div className="hidden lg:block fixed left-4 xl:left-8 w-0.5 z-30" style={{ top: '60vh', bottom: '250px' }}>
+            {/* Ligne gauche avec segment coloré - visible uniquement sur très grands écrans */}
+            <div 
+              className="hidden 2xl:block absolute left-8 w-0.5 z-10" 
+              style={{ 
+                top: '100px', 
+                bottom: '100px',
+                height: 'auto'
+              }}
+            >
               {/* Gradient du haut (transparent vers gris) */}
-              <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-gray-300" />
+              <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-transparent to-gray-300" />
               
               {/* Partie grise centrale */}
-              <div className="absolute top-24 left-0 right-0 bottom-24 bg-gray-300" />
+              <div className="absolute top-20 left-0 right-0 bottom-20 bg-gray-300" />
               
               {/* Gradient du bas (gris vers transparent) */}
-              <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-gray-300 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-b from-gray-300 to-transparent" />
               
-              {/* Section BLEUE - positionnée exactement au niveau du texte à 70vh */}
+              {/* Section BLEUE - positionnée au niveau du texte */}
               <div 
                 className="absolute left-0 right-0" 
                 style={{ 
                   backgroundColor: '#009dd7',
-                  top: 'calc(10vh - 100px)',
-                  height: '200px'
+                  top: '100px',
+                  height: '120px'
                 }}
               />
             </div>

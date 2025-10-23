@@ -1,11 +1,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/pagination';
 
 /**
  * Composant Hero - Section principale avec carrousel
@@ -27,13 +26,10 @@ const Hero = () => {
   return (
     <section className="relative h-screen">
       <Swiper
-        modules={[Autoplay, Pagination]}
+        modules={[Autoplay]}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
         }}
         loop={true}
         className="h-full"

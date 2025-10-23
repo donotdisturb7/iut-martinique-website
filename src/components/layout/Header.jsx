@@ -50,38 +50,38 @@ const Header = () => {
         } ${isDetailPage ? 'bg-white/95 backdrop-blur-sm shadow-md' : 'bg-transparent'} py-6`}
       >
         <Container>
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between relative">
             {/* Logo à gauche */}
-            <Link to="/" className="flex items-center space-x-3 flex-shrink-0">
-              <div className="w-12 h-12 flex items-center justify-center">
+            <Link to="/" className="flex items-center space-x-2 flex-shrink-0 z-50">
+              <div className="w-9 h-9 lg:w-10 lg:h-10 flex items-center justify-center">
                 <img 
                   src={isDetailPage 
                     ? "/src/assets/images/Logo_couleur_ua_martinique.svg"
                     : "/src/assets/images/Logo_blanc_ua_martinique.svg"
                   }
                   alt="IUT Martinique" 
-                  className="h-12 w-auto"
+                  className="h-9 lg:h-10 w-auto"
                 />
               </div>
-              <div className="hidden md:block">
-                <div className={`text-lg font-bold ${isDetailPage ? 'text-gray-900' : 'text-white'}`}>
+              <div className="hidden lg:block">
+                <div className={`text-sm font-bold ${isDetailPage ? 'text-gray-900' : 'text-white'} leading-tight`}>
                   IUT de la Martinique
                 </div>
-                <div className={`text-sm ${isDetailPage ? 'text-gray-600' : 'text-white/90'}`}>
+                <div className={`text-xs ${isDetailPage ? 'text-gray-600' : 'text-white/90'}`}>
                   Université des Antilles
                 </div>
               </div>
             </Link>
 
             {/* Navigation au centre */}
-            <nav className="hidden lg:flex items-center space-x-10 absolute left-1/2 transform -translate-x-1/2">
+            <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8 absolute left-1/2 transform -translate-x-1/2">
               {navItems.map((item) => {
                 const isActive = location.pathname === item.path;
                 return (
                   <Link
                     key={item.path}
                     to={item.path}
-                    className={`font-semibold text-base uppercase tracking-wide whitespace-nowrap transition-colors ${
+                    className={`font-semibold text-xs lg:text-sm uppercase tracking-wide whitespace-nowrap transition-colors ${
                       isActive 
                         ? 'text-[#009dd7]' 
                         : isDetailPage 
@@ -96,11 +96,11 @@ const Header = () => {
             </nav>
 
             {/* Actions à droite */}
-            <div className="flex items-center space-x-4 flex-shrink-0">
+            <div className="flex items-center space-x-3 flex-shrink-0">
               {/* Bouton changement de langue */}
               <button
                 onClick={toggleLanguage}
-                className={`hidden lg:flex items-center px-4 py-2 text-sm font-semibold transition-all border-2 rounded-lg ${
+                className={`hidden lg:flex items-center px-2.5 py-1.5 text-xs font-semibold transition-all border-2 rounded-lg ${
                   isDetailPage
                     ? 'text-gray-700 hover:text-[#009dd7] border-gray-300 hover:border-[#009dd7]'
                     : 'text-white hover:text-[#009dd7] border-white/50 hover:border-[#009dd7]'
@@ -115,12 +115,12 @@ const Header = () => {
                 href="https://myua.univ-antilles.fr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden lg:inline-flex items-center px-5 py-2.5 text-sm font-semibold text-white bg-[#009dd7] hover:bg-[#0087ba] rounded-lg transition-colors shadow-lg"
+                className="hidden lg:inline-flex items-center px-3 py-1.5 text-xs font-semibold text-white bg-[#009dd7] hover:bg-[#0087ba] rounded-lg transition-colors shadow-lg"
               >
                 My UA
               </a>
 
-              {/* Menu burger mobile (seulement visible sur mobile) */}
+              {/* Menu burger mobile (seulement mobile et tablette) */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className={`lg:hidden hover:text-[#009dd7] transition-colors ${

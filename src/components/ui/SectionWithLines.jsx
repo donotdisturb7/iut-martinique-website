@@ -12,9 +12,9 @@ const SectionWithLines = ({
 }) => {
   return (
     <section className={`relative ${bgColor} ${className}`}>
-      {/* Ligne + Texte gauche */}
+      {/* Ligne + Texte gauche - visible uniquement sur très grands écrans */}
       {leftText && (
-        <div className="hidden xl:block fixed left-4 xl:left-8 top-1/2 -translate-y-1/2 z-40">
+        <div className="hidden 2xl:block fixed left-8 top-1/2 -translate-y-1/2 z-40">
           <h2 
             className={`text-xl font-bold ${textColor} tracking-widest mb-4`} 
             style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
@@ -23,12 +23,12 @@ const SectionWithLines = ({
           </h2>
         </div>
       )}
-      <div className="hidden lg:block absolute left-4 xl:left-8 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent" />
+      <div className="hidden 2xl:block absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent" />
       
-      {/* Ligne + Texte droite */}
-      <div className="hidden lg:block absolute right-4 xl:right-8 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent" />
+      {/* Ligne + Texte droite - visible uniquement sur très grands écrans */}
+      <div className="hidden 2xl:block absolute right-8 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent" />
       {rightText && (
-        <div className="hidden xl:block fixed right-4 xl:right-8 top-1/2 -translate-y-1/2 z-40">
+        <div className="hidden 2xl:block fixed right-8 top-1/2 -translate-y-1/2 z-40">
           <h2 
             className={`text-xl font-bold ${textColor} tracking-widest mb-4`} 
             style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}

@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+/* Prévenir le scroll bounce et l'overscroll */
+html {
+  overscroll-behavior: none;
+  overflow-x: hidden;
+}
+
+body {
+  overscroll-behavior: none;
+  overflow-x: hidden;
+}
+
 @layer utilities {
   /* Animations personnalisées */
   .animate-fade-in {
