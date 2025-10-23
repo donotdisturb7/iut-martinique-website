@@ -10,7 +10,7 @@ const Home = () => {
       title: "Signature d'un nouveau partenariat avec Orange Caraïbe",
       category: "Partenariats",
       subcategory: "Entreprises",
-      image: '/but-tc.jpg'
+      image: 'https://s3.us-east-2.amazonaws.com/harrowco.fr/IUT-Martinique/image-IUT3.jpg'
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const Home = () => {
       title: "Innovation et recherche : nouveaux projets en développement durable",
       category: "Recherche",
       subcategory: "DD&RS",
-      image: '/recerche-ia.png'
+      image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.ifpbordeaux.com%2Fpublic%2Fimg%2Fbig%2FDeveloppementdurablejpeg_6077f9bb60b4e.jpeg&f=1&nofb=1&ipt=cda8d3e4402f416418496bcb2186bd86eb617b9b32f32e28a9dbb35f660e738e'
     }
   ];
 
@@ -357,10 +357,10 @@ const Home = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { title: 'Campus', image: '/but-gea.jpg', link: '/contact' },
+              { title: 'Campus', image: '/img-iut.jpg', link: '/contact' },
               { title: 'Culture', image: '/image-remise-diplome.jpg', link: '/vie-etudiante' },
-              { title: 'Vie étudiante', image: '/but-tc.jpg', link: '/vie-etudiante' },
-              { title: 'Sport', image: '/informatique-student.jpg', link: '/vie-etudiante' }
+              { title: 'Vie étudiante', image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwelcomedesk.univ-toulouse.fr%2Fsites%2Fdefault%2Ffiles%2Fmedia%2F2022-01%2Fschema-vie-etudiante-campus.jpg&f=1&nofb=1&ipt=3a556d491b4483114c2d5edd23df819a846348f71be3623a9a33b6820715f185', link: '/vie-etudiante' },
+              { title: 'Sport', image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthvnext.bing.com%2Fth%2Fid%2FOIP.grO-sw81cTjH2cN-BtP1NAHaE7%3Fcb%3Ducfimg2%26pid%3DApi%26ucfimg%3D1&f=1&ipt=c1ba93b990fd7b2a76f261a24feb1902ea79077d06bc629af25d52b452bee517&ipo=images', link: '/vie-etudiante' }
             ].map((item, index) => (
               <motion.div
                 key={index}

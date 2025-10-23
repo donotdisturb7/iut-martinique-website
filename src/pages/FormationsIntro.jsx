@@ -28,7 +28,7 @@ const FormationsIntro = () => {
     {
       title: 'Se former en alternance',
       description: 'Toutes nos formations accessibles en alternance',
-      image: '/but-tc.jpg',
+      image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.lw-works.com%2Fwp-content%2Fuploads%2F2022%2F11%2FAlternance-1024x576.jpg&f=1&nofb=1&ipt=d09ff908c377213caf9866151c882e35bf4664cd9b79814ce24939aaca688b94',
       link: '/entreprises'
     },
     {
@@ -58,7 +58,7 @@ const FormationsIntro = () => {
     {
       title: 'Enquêtes et statistiques',
       description: 'Consultez les données d\'insertion et de réussite',
-      image: '/but-gea.jpg',
+      image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.argenteuil.fr%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fimg__384x256__crop_main%2Fpublic%2Fmedia%2Fimages%2Fshutterstock_1332895868.jpg%3Fitok%3DV2_P4XEd&f=1&nofb=1&ipt=a8423b2be0d3805b4f968bad58fd9b1404651bc9a2eb00a6569edc5be97b4daa',
       link: '/contact'
     }
   ];
