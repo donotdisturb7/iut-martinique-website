@@ -1,175 +1,191 @@
 import { Link } from 'react-router-dom';
-import { FiFacebook, FiInstagram, FiLinkedin, FiTwitter } from 'react-icons/fi';
+import { FiFacebook, FiInstagram, FiLinkedin, FiTwitter, FiMapPin, FiMail, FiPhone } from 'react-icons/fi';
 import Container from '../ui/Container';
 
 /**
- * Composant Footer style MIT
+ * Composant Footer modernisé
  */
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-gray-900 text-gray-300 pt-4 pb-3">
+    <footer className="bg-gray-900 from-outremer-600 to-outremer-900 text-white">
+      {/* Vague décorative en haut du footer */}
+      <div className="w-full overflow-hidden">
+        <svg className="w-full h-12 -mb-1" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path 
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" 
+            className="fill-white"
+          ></path>
+        </svg>
+      </div>
+      
+      {/* Contenu principal du footer */}
       <Container>
-        {/* Logo IUT */}
-        <div className="mb-3">
-          <Link to="/" className="inline-block">
-            <img 
-              src="/src/assets/images/Logo_couleur_ua_martinique.svg" 
-              alt="IUT Martinique" 
-              className="h-8 w-auto opacity-60 hover:opacity-80 transition-opacity"
-              style={{ filter: 'brightness(0) invert(1)' }}
-            />
-          </Link>
-        </div>
-
-        {/* Navigation principale */}
-        <nav className="mb-3">
-          <ul className="flex flex-wrap gap-3">
-            <li>
-              <Link to="/formations" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
-                Formations
-              </Link>
-            </li>
-            <li>
-              <Link to="/recherche" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
-                Recherche
-              </Link>
-            </li>
-            <li>
-              <Link to="/entreprises" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
-                Entreprises
-              </Link>
-            </li>
-            <li>
-              <Link to="/vie-etudiante" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
-                Vie Étudiante
-              </Link>
-            </li>
-            <li>
-              <Link to="/" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
-                Actualités
-              </Link>
-            </li>
-            <li>
-              <Link to="/iut" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
-                À propos
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </nav>
-
-        {/* Informations et liens utiles */}
-        <div className="border-t border-gray-800 pt-3">
-          {/* Nom et adresse */}
-          <div className="mb-2">
-            <p className="text-white font-semibold text-sm">
-              Institut Universitaire de Technologie de la Martinique
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-12">
+          {/* Colonne 1: Logo et présentation */}
+          <div className="space-y-4">
+            <Link to="/" className="inline-block mb-4">
+              <img
+                src="https://s3.us-east-2.amazonaws.com/harrowco.fr/IUT-Martinique/Logo_couleur_ua_martinique.svg"
+                alt="IUT de la martinique"
+                className="h-16 w-auto"
+                style={{ filter: 'brightness(0) invert(1)' }}
+              />
+            </Link>
+            <p className="text-sm text-gray-300 leading-relaxed">
+              L'Institut Universitaire de Technologie de la Martinique forme les talents de demain 
+              dans un cadre d'excellence académique et professionnelle.
             </p>
-            <address className="text-xs not-italic text-gray-400">
+            <div className="flex space-x-3 pt-2">
               <a 
-                href="https://www.google.com/maps/search/IUT+Martinique" 
+                href="https://www.instagram.com/iutmartinique/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="hover:text-white transition-colors"
+                className="bg-white/10 hover:bg-celestial-500 p-2 rounded-full transition-colors duration-300"
+                aria-label="Instagram"
               >
-                Campus de Schoelcher, 97275 Schoelcher, Martinique
+                <FiInstagram className="w-5 h-5" />
               </a>
-            </address>
+              <a 
+                href="https://www.linkedin.com/company/iut-de-la-martinique/posts/?feedView=all" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white/10 hover:bg-celestial-500 p-2 rounded-full transition-colors duration-300"
+                aria-label="LinkedIn"
+              >
+                <FiLinkedin className="w-5 h-5" />
+              </a>
+            </div>
           </div>
 
-          {/* Liens utiles et réseaux sociaux */}
-          <div className="flex flex-wrap items-center justify-between gap-2">
-            {/* Liens utiles */}
-            <ul className="flex flex-wrap gap-2 text-xs">
+          {/* Colonne 2: Navigation */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-bold text-white border-b border-celestial-400 pb-2 mb-4">Navigation</h3>
+            <ul className="space-y-3">
               <li>
-                <Link to="/iut" className="text-gray-400 hover:text-white transition-colors">
-                  Visiter
+                <Link to="/formations" className="text-gray-300 hover:text-celestial-300 transition-colors flex items-center">
+                  <span className="bg-celestial-500 h-1 w-3 mr-2 rounded-full"></span>
+                  Formations
                 </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/recherche" className="text-gray-300 hover:text-celestial-300 transition-colors flex items-center">
+                  <span className="bg-celestial-500 h-1 w-3 mr-2 rounded-full"></span>
+                  Recherche
+                </Link>
+              </li>
+              <li>
+                <Link to="/entreprises" className="text-gray-300 hover:text-celestial-300 transition-colors flex items-center">
+                  <span className="bg-celestial-500 h-1 w-3 mr-2 rounded-full"></span>
+                  Entreprises
+                </Link>
+              </li>
+              <li>
+                <Link to="/vie-etudiante" className="text-gray-300 hover:text-celestial-300 transition-colors flex items-center">
+                  <span className="bg-celestial-500 h-1 w-3 mr-2 rounded-full"></span>
+                  Vie Étudiante
+                </Link>
+              </li>
+              <li>
+                <Link to="/iut" className="text-gray-300 hover:text-celestial-300 transition-colors flex items-center">
+                  <span className="bg-celestial-500 h-1 w-3 mr-2 rounded-full"></span>
+                  À propos
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-gray-300 hover:text-celestial-300 transition-colors flex items-center">
+                  <span className="bg-celestial-500 h-1 w-3 mr-2 rounded-full"></span>
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Colonne 3: Liens utiles */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-bold text-white border-b border-celestial-400 pb-2 mb-4">Liens utiles</h3>
+            <ul className="space-y-3">
+              <li>
+                <a href="https://myua.univ-antilles.fr" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-celestial-300 transition-colors">
+                  My UA
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-gray-300 hover:text-celestial-300 transition-colors">
                   Plan du campus
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-gray-300 hover:text-celestial-300 transition-colors">
                   Événements
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-gray-300 hover:text-celestial-300 transition-colors">
                   Emplois
                 </a>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-gray-300 hover:text-celestial-300 transition-colors">
                   Confidentialité
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-gray-300 hover:text-celestial-300 transition-colors">
                   Accessibilité
                 </a>
               </li>
-              
-              {/* Réseaux sociaux */}
-              <li className="ml-auto flex items-center gap-2">
-                <span className="text-gray-400 text-xs mr-1">Suivez-nous</span>
+            </ul>
+          </div>
+
+          {/* Colonne 4: Contact */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-bold text-white border-b border-celestial-400 pb-2 mb-4">Contact</h3>
+            <ul className="space-y-4">
+              <li className="flex items-start">
+                <FiMapPin className="w-5 h-5 text-celestial-400 mt-1 mr-3 flex-shrink-0" />
                 <a 
-                  href="https://twitter.com" 
+                  href="https://www.google.com/maps/search/IUT+Martinique" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors"
-                  aria-label="Twitter"
+                  className="text-gray-300 hover:text-celestial-300 transition-colors"
                 >
-                  <FiTwitter className="w-4 h-4" />
+                  Campus de Schoelcher<br />
+                  97275 Schoelcher<br />
+                  Martinique
                 </a>
-                <a 
-                  href="https://facebook.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors"
-                  aria-label="Facebook"
-                >
-                  <FiFacebook className="w-4 h-4" />
+              </li>
+              <li className="flex items-center">
+                <FiPhone className="w-5 h-5 text-celestial-400 mr-3 flex-shrink-0" />
+                <a href="tel:+596596727272" className="text-gray-300 hover:text-celestial-300 transition-colors">
+                  +596 596 72 72 72
                 </a>
-                <a 
-                  href="https://instagram.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors"
-                  aria-label="Instagram"
-                >
-                  <FiInstagram className="w-4 h-4" />
-                </a>
-                <a 
-                  href="https://linkedin.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <FiLinkedin className="w-4 h-4" />
+              </li>
+              <li className="flex items-center">
+                <FiMail className="w-5 h-5 text-celestial-400 mr-3 flex-shrink-0" />
+                <a href="mailto:contact@iut-martinique.fr" className="text-gray-300 hover:text-celestial-300 transition-colors">
+                  contact@iut-martinique.fr
                 </a>
               </li>
             </ul>
           </div>
         </div>
-
-        {/* Copyright */}
-        <div className="mt-2 pt-2 border-t border-gray-800 text-center text-xs text-gray-500">
-          <p>&copy; {new Date().getFullYear()} IUT de la Martinique - Université des Antilles. Tous droits réservés.</p>
-        </div>
       </Container>
+
+      {/* Barre de copyright */}
+      <div className="bg-outremer-900 py-4">
+        <Container>
+          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+            <p>&copy; {currentYear} IUT de la Martinique - Université des Antilles. Tous droits réservés.</p>
+            <div className="mt-2 md:mt-0">
+              <a href="#" className="text-gray-400 hover:text-white transition-colors mx-2">Mentions légales</a>
+              <span className="mx-2">|</span>
+              <a href="#" className="text-gray-400 hover:text-white transition-colors mx-2">Politique de confidentialité</a>
+            </div>
+          </div>
+        </Container>
+      </div>
     </footer>
   );
 };
