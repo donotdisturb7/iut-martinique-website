@@ -357,7 +357,7 @@ const Home = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { title: 'Campus', image: '/img-iut.jpg', link: '/contact' },
+              { title: 'IUT', image: '/img-iut.jpg', link: '/contact' },
               { title: 'Culture', image: '/image-remise-diplome.jpg', link: '/vie-etudiante' },
               { title: 'Vie étudiante', image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwelcomedesk.univ-toulouse.fr%2Fsites%2Fdefault%2Ffiles%2Fmedia%2F2022-01%2Fschema-vie-etudiante-campus.jpg&f=1&nofb=1&ipt=3a556d491b4483114c2d5edd23df819a846348f71be3623a9a33b6820715f185', link: '/vie-etudiante' },
               { title: 'Sport', image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthvnext.bing.com%2Fth%2Fid%2FOIP.grO-sw81cTjH2cN-BtP1NAHaE7%3Fcb%3Ducfimg2%26pid%3DApi%26ucfimg%3D1&f=1&ipt=c1ba93b990fd7b2a76f261a24feb1902ea79077d06bc629af25d52b452bee517&ipo=images', link: '/vie-etudiante' }
