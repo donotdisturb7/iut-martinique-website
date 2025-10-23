@@ -56,8 +56,8 @@ const Header = () => {
               <div className="w-9 h-9 lg:w-10 lg:h-10 flex items-center justify-center">
                 <img 
                   src={isDetailPage 
-                    ? "/src/assets/images/Logo_couleur_ua_martinique.svg"
-                    : "/src/assets/images/Logo_blanc_ua_martinique.svg"
+                    ? "https://s3.us-east-2.amazonaws.com/harrowco.fr/IUT-Martinique/Logo_couleur_ua_martinique.svg"
+                    : "https://s3.us-east-2.amazonaws.com/harrowco.fr/IUT-Martinique/Logo_blanc_ua_martinique.svg"
                   }
                   alt="IUT Martinique" 
                   className="h-9 lg:h-10 w-auto"
