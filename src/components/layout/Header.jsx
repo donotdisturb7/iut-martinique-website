@@ -57,7 +57,7 @@ const Header = () => {
                 <img 
                   src={isDetailPage 
                     ? "/src/assets/images/Logo_couleur_ua_martinique.svg"
-                    : "/src/assets/images/Logo_blanc_ua_martinique.svg"
+                    : "/src/assets/images/Logo_couleur_ua_martinique.png"
                   }
                   alt="IUT Martinique" 
                   className="h-9 lg:h-10 w-auto"
