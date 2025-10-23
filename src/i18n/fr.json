@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "iut": "L'IUT",
+    "formations": "Formations",
+    "recherche": "Recherche",
+    "entreprises": "Entreprises",
+    "vieEtudiante": "Vie étudiante",
+    "contact": "Contact",
+    "candidater": "Candidater"
+  },
+  "hero": {
+    "title": "Bienvenue à l'IUT de la Martinique",
+    "subtitle": "Excellence, Innovation et Insertion professionnelle",
+    "cta1": "Découvrir nos formations",
+    "cta2": "Candidater"
+  },
+  "keyNumbers": {
+    "title": "L'IUT en chiffres",
+    "students": "Étudiants",
+    "formations": "Formations",
+    "partners": "Partenaires"
+  },
+  "formations": {
+    "title": "Nos Formations",
+    "subtitle": "Découvrez nos BUT et Licences Professionnelles",
+    "viewAll": "Voir toutes les formations",
+    "but": "BUT",
+    "lp": "Licence Pro",
+    "gea": {
+      "name": "Gestion des Entreprises et des Administrations",
+      "short": "GEA",
+      "description": "Formation polyvalente en gestion : comptabilité, finance, ressources humaines, marketing"
+    },
+    "info": {
+      "name": "Informatique",
+      "short": "INFO",
+      "description": "Développement, réseaux, cybersécurité et administration systèmes"
+    },
+    "mlt": {
+      "name": "Mesures Physiques et Techniques de Laboratoire",
+      "short": "MLT",
+      "description": "Instrumentation, mesures et analyses en laboratoire"
+    },
+    "tc": {
+      "name": "Techniques de Commercialisation",
+      "short": "TC",
+      "description": "Marketing, communication, vente et e-commerce"
+    },
+    "hse": {
+      "name": "Hygiène, Sécurité, Environnement",
+      "short": "HSE",
+      "description": "Management des risques et protection de l'environnement"
+    },
+    "mgo": {
+      "name": "Management et Gestion des Organisations",
+      "short": "MGO",
+      "description": "Pilotage stratégique et opérationnel des organisations"
+    },
+    "lpf": {
+      "name": "Logistique, Production et Flux",
+      "short": "LPF",
+      "description": "Optimisation des chaînes logistiques et supply chain"
+    }
+  },
+  "portraits": {
+    "title": "Portraits",
+    "subtitle": "Découvrez les visages de notre communauté"
+  },
+  "news": {
+    "title": "Actualités",
+    "subtitle": "Suivez la vie de l'IUT",
+    "readMore": "Lire la suite"
+  },
+  "partners": {
+    "title": "Nos Partenaires",
+    "subtitle": "Ils nous font confiance",
+    "cta": "Proposer une offre"
+  },
+  "footer": {
+    "contact": "Contact",
+    "address": "Campus de Schoelcher<br/>BP 7209 - 97275 Schoelcher Cedex",
+    "phone": "Tél : 05 96 72 73 00",
+    "siteMap": "Plan du site",
+    "usefulLinks": "Liens utiles",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "followUs": "Nous suivre"
+  }
+}
+

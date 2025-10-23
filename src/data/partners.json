@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "name": "Collectivité Territoriale de Martinique",
+    "logo": "https://via.placeholder.com/150x80?text=CTM",
+    "url": "https://www.collectivitedemartinique.mq"
+  },
+  {
+    "id": 2,
+    "name": "Chambre de Commerce et d'Industrie",
+    "logo": "https://via.placeholder.com/150x80?text=CCI",
+    "url": "#"
+  },
+  {
+    "id": 3,
+    "name": "Orange Caraïbe",
+    "logo": "https://via.placeholder.com/150x80?text=Orange",
+    "url": "#"
+  },
+  {
+    "id": 4,
+    "name": "EDF Martinique",
+    "logo": "https://via.placeholder.com/150x80?text=EDF",
+    "url": "#"
+  },
+  {
+    "id": 5,
+    "name": "CHU de Martinique",
+    "logo": "https://via.placeholder.com/150x80?text=CHU",
+    "url": "#"
+  },
+  {
+    "id": 6,
+    "name": "Groupe Bernard Hayot",
+    "logo": "https://via.placeholder.com/150x80?text=GBH",
+    "url": "#"
+  }
+]
+

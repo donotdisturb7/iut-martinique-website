@@ -1,0 +1,87 @@
+[
+  {
+    "id": "but-gea",
+    "type": "BUT",
+    "code": "GEA",
+    "name": "Gestion des Entreprises et des Administrations",
+    "description": "Formation polyvalente en gestion : comptabilité, finance, ressources humaines, marketing",
+    "image": "/img-iut.jpg",
+    "duration": "3 ans",
+    "level": "Bac+3",
+    "alternance": true,
+    "parcours": ["Gestion comptable et financière", "Gestion et pilotage des ressources humaines", "Gestion, entrepreneuriat et management d'activités"]
+  },
+  {
+    "id": "but-info",
+    "type": "BUT",
+    "code": "INFO",
+    "name": "Informatique",
+    "description": "Développement, réseaux, cybersécurité et administration systèmes",
+    "image": "/image-remise-diplome.jpg",
+    "duration": "3 ans",
+    "level": "Bac+3",
+    "alternance": true,
+    "parcours": ["Réalisation d'applications", "Déploiement d'applications", "Administration, gestion et exploitation des données"]
+  },
+  {
+    "id": "but-mlt",
+    "type": "BUT",
+    "code": "MLT",
+    "name": "Management de la Logistique et des Transports",
+    "description": "Gestion des flux, chaînes logistiques et optimisation des transports",
+    "image": "/img-iut.jpg",
+    "duration": "3 ans",
+    "level": "Bac+3",
+    "alternance": true,
+    "parcours": ["Management de la chaîne logistique", "Management de la mobilité et de la supply chain", "Management de la mobilité durable"]
+  },
+  {
+    "id": "but-tc",
+    "type": "BUT",
+    "code": "TC",
+    "name": "Techniques de Commercialisation",
+    "description": "Marketing, communication, vente et e-commerce",
+    "image": "/image-remise-diplome.jpg",
+    "duration": "3 ans",
+    "level": "Bac+3",
+    "alternance": true,
+    "parcours": ["Marketing digital", "Business international", "Stratégie de marque et événementiel"]
+  },
+  {
+    "id": "but-hse",
+    "type": "BUT",
+    "code": "HSE",
+    "name": "Hygiène, Sécurité, Environnement",
+    "description": "Management des risques et protection de l'environnement",
+    "image": "/img-iut.jpg",
+    "duration": "3 ans",
+    "level": "Bac+3",
+    "alternance": true,
+    "parcours": ["Science du danger et management des risques professionnels", "Science du danger et management des risques environnementaux"]
+  },
+  {
+    "id": "lp-mgo",
+    "type": "LP",
+    "code": "MGO",
+    "name": "Management et Gestion des Organisations",
+    "description": "Pilotage stratégique et opérationnel des organisations",
+    "image": "/image-remise-diplome.jpg",
+    "duration": "1 an",
+    "level": "Bac+3",
+    "alternance": true,
+    "parcours": []
+  },
+  {
+    "id": "lp-lpf",
+    "type": "LP",
+    "code": "LPF",
+    "name": "Logistique, Production et Flux",
+    "description": "Optimisation des chaînes logistiques et supply chain",
+    "image": "/img-iut.jpg",
+    "duration": "1 an",
+    "level": "Bac+3",
+    "alternance": true,
+    "parcours": []
+  }
+]
+

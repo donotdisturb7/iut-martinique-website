@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "iut": "About IUT",
+    "formations": "Programs",
+    "recherche": "Research",
+    "entreprises": "Companies",
+    "vieEtudiante": "Student Life",
+    "contact": "Contact",
+    "candidater": "Apply"
+  },
+  "hero": {
+    "title": "Welcome to IUT Martinique",
+    "subtitle": "Excellence, Innovation and Professional Integration",
+    "cta1": "Discover our programs",
+    "cta2": "Apply now"
+  },
+  "keyNumbers": {
+    "title": "IUT in numbers",
+    "students": "Students",
+    "formations": "Programs",
+    "partners": "Partners"
+  },
+  "formations": {
+    "title": "Our Programs",
+    "subtitle": "Discover our Bachelor's degrees and Professional Licenses",
+    "viewAll": "View all programs",
+    "but": "BUT",
+    "lp": "Professional License",
+    "gea": {
+      "name": "Business and Administration Management",
+      "short": "GEA",
+      "description": "Comprehensive management training: accounting, finance, HR, marketing"
+    },
+    "info": {
+      "name": "Computer Science",
+      "short": "INFO",
+      "description": "Development, networks, cybersecurity and systems administration"
+    },
+    "mlt": {
+      "name": "Physical Measurements and Laboratory Techniques",
+      "short": "MLT",
+      "description": "Instrumentation, measurements and laboratory analysis"
+    },
+    "tc": {
+      "name": "Marketing Techniques",
+      "short": "TC",
+      "description": "Marketing, communication, sales and e-commerce"
+    },
+    "hse": {
+      "name": "Health, Safety, Environment",
+      "short": "HSE",
+      "description": "Risk management and environmental protection"
+    },
+    "mgo": {
+      "name": "Organization Management",
+      "short": "MGO",
+      "description": "Strategic and operational management of organizations"
+    },
+    "lpf": {
+      "name": "Logistics, Production and Flow",
+      "short": "LPF",
+      "description": "Optimization of logistics and supply chains"
+    }
+  },
+  "portraits": {
+    "title": "Portraits",
+    "subtitle": "Meet the faces of our community"
+  },
+  "news": {
+    "title": "News",
+    "subtitle": "Follow IUT's life",
+    "readMore": "Read more"
+  },
+  "partners": {
+    "title": "Our Partners",
+    "subtitle": "They trust us",
+    "cta": "Submit an offer"
+  },
+  "footer": {
+    "contact": "Contact",
+    "address": "Schoelcher Campus<br/>BP 7209 - 97275 Schoelcher Cedex",
+    "phone": "Phone: +596 596 72 73 00",
+    "siteMap": "Site map",
+    "usefulLinks": "Useful links",
+    "legal": "Legal notice",
+    "privacy": "Privacy policy",
+    "followUs": "Follow us"
+  }
+}
+

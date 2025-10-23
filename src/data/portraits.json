@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Marie-Louise Destin",
+    "role": "Enseignante-chercheuse en Informatique",
+    "quote": "Former les étudiants aux technologies de demain est ma passion. À l'IUT, nous préparons des professionnels compétents et adaptables.",
+    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
+    "department": "Département Informatique"
+  },
+  {
+    "id": 2,
+    "name": "Jean-Marc Alcindor",
+    "role": "Directeur du département GEA",
+    "quote": "Notre approche pédagogique allie théorie et pratique pour garantir une insertion professionnelle optimale de nos diplômés.",
+    "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+    "department": "Département GEA"
+  },
+  {
+    "id": 3,
+    "name": "Sophie Leblanc",
+    "role": "Étudiante en BUT TC 2ème année",
+    "quote": "L'alternance m'a permis de mettre en pratique mes connaissances et de construire mon réseau professionnel. Je recommande vivement l'IUT !",
+    "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop",
+    "department": "BUT Techniques de Commercialisation"
+  },
+  {
+    "id": 4,
+    "name": "Alexandre Moutoussamy",
+    "role": "Technicien de laboratoire",
+    "quote": "Travailler à l'IUT, c'est participer à la formation de la jeunesse martiniquaise. Les équipements modernes permettent un enseignement de qualité.",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    "department": "Département MLT"
+  }
+]
+

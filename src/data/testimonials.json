@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "name": "Marie-Claire Lamentin",
+    "formation": "BUT GEA - Promotion 2023",
+    "quote": "L'IUT m'a permis d'acquérir une solide formation en gestion tout en étant accompagnée par des professeurs à l'écoute. J'ai décroché un CDI avant même la fin de mes études.",
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop"
+  },
+  {
+    "id": 2,
+    "name": "Kévin Rivière",
+    "formation": "BUT Informatique - Promotion 2022",
+    "quote": "La formation en alternance m'a permis de mettre en pratique immédiatement mes compétences. Aujourd'hui je suis développeur full-stack dans une entreprise innovante.",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop"
+  },
+  {
+    "id": 3,
+    "name": "Sarah Césaire",
+    "formation": "LP Management et Gestion - Promotion 2023",
+    "quote": "Après un BUT TC, j'ai choisi de me spécialiser avec la licence pro MGO. Cette année m'a ouvert les portes d'un poste de responsable commercial.",
+    "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop"
+  },
+  {
+    "id": 4,
+    "name": "Thomas Dubois",
+    "formation": "BUT HSE - Promotion 2024",
+    "quote": "La qualité de l'enseignement et les liens forts avec les entreprises locales font la différence. Je me sens prêt à relever les défis professionnels.",
+    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop"
+  }
+]
+
