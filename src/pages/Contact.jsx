@@ -79,7 +79,7 @@ const Contact = () => {
 
 
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 ml-4 lg:ml-8 xl:ml-12">
           {/* Formulaire */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}

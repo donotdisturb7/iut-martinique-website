@@ -26,7 +26,7 @@ const Formations = () => {
       heroImage="/img-iut.jpg"
     >
       {/* Contenu principal */}
-      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 ml-4 lg:ml-8 xl:ml-12">
 
         {/* Sections par type */}
         {sections.map((type, sectionIndex) => (

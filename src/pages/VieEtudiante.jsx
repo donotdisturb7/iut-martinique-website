@@ -51,7 +51,7 @@ const VieEtudiante = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mb-16 max-w-4xl"
+          className="mb-16 max-w-4xl ml-4 lg:ml-8 xl:ml-12"
         >
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
               Étudier à l'IUT de la Martinique, c'est bien plus qu'une formation académique : c'est vivre 

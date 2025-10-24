@@ -15,12 +15,12 @@ const PageLayout = ({ children, pageName, pageTitle, pageSubtitle, heroImage, hi
       />
 
       {/* Contenu de la page avec fond blanc */}
-      <div className="bg-white relative z-10 py-12">
+      <div className="bg-white relative z-10 py-12 pl-8 lg:pl-16 xl:pl-20">
         {/* Décorations (texte vertical + ligne) - masquées si hideDecorations = true */}
         {!hideDecorations && (
           <>
             {/* Texte vertical - visible uniquement sur très grands écrans */}
-            <div className="hidden lg:block absolute left-8 z-50" style={{ top: '200px' }}>
+            <div className="hidden lg:block absolute left-4 z-50" style={{ top: '200px' }}>
               <h2 
                 className="text-xl lg:text-2xl font-bold text-gray-400 tracking-widest" 
                 style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
@@ -31,7 +31,7 @@ const PageLayout = ({ children, pageName, pageTitle, pageSubtitle, heroImage, hi
 
             {/* Ligne gauche avec segment coloré - visible uniquement sur très grands écrans */}
             <div 
-              className="hidden lg:block absolute left-8 w-0.5 z-40" 
+              className="hidden lg:block absolute left-4 w-0.5 z-40" 
               style={{ 
                 top: '100px', 
                 bottom: '100px',

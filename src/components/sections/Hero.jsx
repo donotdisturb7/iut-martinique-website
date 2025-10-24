@@ -92,14 +92,20 @@ const Hero = () => {
                     className="flex flex-col sm:flex-row gap-5"
                   >
                     <Link to="/formations">
-                      <Button size="lg" className="w-full sm:w-auto bg-[#13316C] hover:bg-[#0f2856] text-white font-semibold text-sm md:text-base lg:text-base laptop:text-lg px-6 py-3 md:px-8 md:py-4 lg:px-8 lg:py-4 laptop:px-10 laptop:py-4 rounded-lg shadow-lg transition-all">
+                      <button 
+                        className="w-full sm:w-auto bg-[#13316C] hover:bg-[#0f2856] text-white font-semibold text-sm md:text-base lg:text-base laptop:text-lg rounded-lg shadow-lg transition-all"
+                        style={{ padding: '12px 24px' }}
+                      >
                         Découvrir nos formations
-                      </Button>
+                      </button>
                     </Link>
                     <a href="https://candidature.univ-antilles.fr" target="_blank" rel="noopener noreferrer">
-                      <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-[#13316C] font-semibold text-sm md:text-base lg:text-base laptop:text-lg px-6 py-3 md:px-8 md:py-4 lg:px-8 lg:py-4 laptop:px-10 laptop:py-4 rounded-lg transition-all">
+                      <button 
+                        className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-[#13316C] font-semibold text-sm md:text-base lg:text-base laptop:text-lg rounded-lg transition-all"
+                        style={{ padding: '10px 22px' }}
+                      >
                         Candidater maintenant
-                      </Button>
+                      </button>
                     </a>
                   </motion.div>
                 </div>

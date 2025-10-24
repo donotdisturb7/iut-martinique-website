@@ -94,7 +94,7 @@ const Recherche = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mb-16 max-w-4xl"
+          className="mb-16 max-w-4xl ml-4 lg:ml-8 xl:ml-12"
         >
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
               En lien avec sa mission de transmission du savoir, l'IUT de la Martinique est créateur de 
@@ -118,7 +118,7 @@ const Recherche = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="h-[500px] md:h-[600px] mb-12 rounded-2xl overflow-hidden shadow-2xl"
+          className="h-[500px] md:h-[600px] mb-12 rounded-2xl overflow-hidden shadow-2xl ml-4 lg:ml-8 xl:ml-12"
           style={{ backgroundColor: '#f9fafb' }}
         >
           <DynamicFrameLayout 
