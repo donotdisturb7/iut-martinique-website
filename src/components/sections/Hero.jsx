@@ -2,6 +2,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import Button from '../ui/Button';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -13,13 +15,10 @@ const Hero = () => {
   const { t } = useTranslation();
 
   const slides = [
+
     {
-      image: '/img-iut.jpg',
-      alt: 'Campus IUT Martinique'
-    },
-    {
-      image: '/image-remise-diplome.jpg',
-      alt: 'Remise des diplômes'
+      image:'/background-hero1.jpg',
+      alt: 'Background hero'
     }
   ];
 
@@ -68,10 +67,28 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="text-xl md:text-2xl"
+                    className="text-xl md:text-2xl mb-8"
                   >
                     {t('hero.subtitle')}
                   </motion.p>
+
+                  <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.6 }}
+                    className="flex flex-col sm:flex-row gap-4"
+                  >
+                    <Link to="/formations">
+                      <Button size="lg" className="w-full sm:w-auto bg-[#009dd7] hover:bg-[#0087ba] text-white font-semibold px-8 py-3 rounded-lg shadow-lg transition-all">
+                        Découvrir nos formations
+                      </Button>
+                    </Link>
+                    <a href="https://candidature.univ-antilles.fr" target="_blank" rel="noopener noreferrer">
+                      <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-[#009dd7] font-semibold px-8 py-3 rounded-lg transition-all">
+                        Candidater maintenant
+                      </Button>
+                    </a>
+                  </motion.div>
                 </div>
               </div>
             </div>
