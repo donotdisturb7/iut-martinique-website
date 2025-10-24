@@ -51,7 +51,7 @@ const Header = () => {
             : isDetailPage 
               ? 'top-0 bg-white/95 backdrop-blur-sm shadow-md' 
               : 'top-4 bg-transparent'
-        } py-3 md:py-4 lg:py-5`}
+        } py-3 md:py-4 lg:py-1`}
       >
         <Container>
           <div className="flex items-center justify-between h-[60px] md:h-[70px] lg:h-[75px] laptop:h-[80px] xl:h-[85px] 2xl:h-[90px]">
