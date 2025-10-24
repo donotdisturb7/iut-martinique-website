@@ -51,27 +51,27 @@ const Header = () => {
             : isDetailPage 
               ? 'bg-white/95 backdrop-blur-sm shadow-md' 
               : 'bg-transparent'
-        } py-6`}
+        } py-8`}
       >
         <Container>
           <div className="flex items-center justify-between relative">
             {/* Logo à gauche */}
-            <Link to="/" className="flex items-center space-x-2 shrink-0 z-50">
-              <div className="w-9 h-9 lg:w-10 lg:h-10 flex items-center justify-center">
+            <Link to="/" className="flex items-center space-x-3 shrink-0 z-50">
+              <div className="w-12 h-12 lg:w-14 lg:h-14 flex items-center justify-center">
                 <img 
                   src={(isDetailPage || isScrolled)
                     ? "https://s3.us-east-2.amazonaws.com/harrowco.fr/IUT-Martinique/Logo_couleur_ua_martinique.svg"
                     : "https://s3.us-east-2.amazonaws.com/harrowco.fr/IUT-Martinique/Logo_blanc_ua_martinique.svg"
                   }
                   alt="IUT Martinique" 
-                  className="h-9 lg:h-10 w-auto"
+                  className="h-12 lg:h-14 w-auto"
                 />
               </div>
               <div className="hidden lg:block">
-                <div className={`text-sm font-bold ${(isDetailPage || isScrolled) ? 'text-gray-900' : 'text-white'} leading-tight`}>
+                <div className={`text-base lg:text-lg font-bold ${(isDetailPage || isScrolled) ? 'text-gray-900' : 'text-white'} leading-tight`}>
                   IUT de la Martinique
                 </div>
-                <div className={`text-xs ${(isDetailPage || isScrolled) ? 'text-gray-600' : 'text-white/90'}`}>
+                <div className={`text-sm ${(isDetailPage || isScrolled) ? 'text-gray-600' : 'text-white/90'}`}>
                   Université des Antilles
                 </div>
               </div>
@@ -85,7 +85,7 @@ const Header = () => {
                   <Link
                     key={item.path}
                     to={item.path}
-                    className={`font-semibold text-xs lg:text-sm uppercase tracking-wide whitespace-nowrap transition-colors ${
+                    className={`font-semibold text-sm lg:text-base uppercase tracking-wide whitespace-nowrap transition-colors ${
                       isActive 
                         ? 'text-[#009dd7]' 
                         : (isDetailPage || isScrolled)
@@ -104,7 +104,7 @@ const Header = () => {
               {/* Bouton changement de langue */}
               <button
                 onClick={toggleLanguage}
-                className={`hidden lg:flex items-center px-2.5 py-1.5 text-xs font-semibold transition-all border-2 rounded-lg ${
+                className={`hidden lg:flex items-center px-3 py-2 text-sm font-semibold transition-all border-2 rounded-lg ${
                   (isDetailPage || isScrolled)
                     ? 'text-gray-700 hover:text-[#009dd7] border-gray-300 hover:border-[#009dd7]'
                     : 'text-white hover:text-[#009dd7] border-white/50 hover:border-[#009dd7]'
@@ -119,7 +119,7 @@ const Header = () => {
                 href="https://myua.univ-antilles.fr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden lg:inline-flex items-center px-3 py-1.5 text-xs font-semibold text-white bg-[#009dd7] hover:bg-[#0087ba] rounded-lg transition-colors shadow-lg"
+                className="hidden lg:inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-[#009dd7] hover:bg-[#0087ba] rounded-lg transition-colors shadow-lg"
               >
                 My UA
               </a>
@@ -133,9 +133,9 @@ const Header = () => {
                 aria-label="Menu"
               >
                 {isMobileMenuOpen ? (
-                  <FiX className="w-7 h-7" />
+                  <FiX className="w-8 h-8" />
                 ) : (
-                  <FiMenu className="w-7 h-7" />
+                  <FiMenu className="w-8 h-8" />
                 )}
               </button>
 
@@ -149,7 +149,7 @@ const Header = () => {
                 }`}
                 aria-label="Rechercher"
               >
-                <FiSearch className="w-6 h-6" />
+                <FiSearch className="w-7 h-7" />
               </button>
             </div>
           </div>

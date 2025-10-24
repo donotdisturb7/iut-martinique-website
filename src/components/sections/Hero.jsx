@@ -53,12 +53,12 @@ const Hero = () => {
               
               {/* Contenu */}
               <div className="absolute inset-0 flex items-center">
-                <div className="text-left text-white px-8 md:px-16 lg:px-24 max-w-4xl">
+                <div className="text-left text-white px-8 md:px-16 lg:px-24 max-w-5xl">
                   <motion.h1
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
+                    className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8"
                   >
                     {t('hero.title')}
                   </motion.h1>
@@ -67,7 +67,7 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="text-xl md:text-2xl mb-8"
+                    className="text-2xl md:text-3xl lg:text-4xl mb-10"
                   >
                     {t('hero.subtitle')}
                   </motion.p>
@@ -76,15 +76,15 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
-                    className="flex flex-col sm:flex-row gap-4"
+                    className="flex flex-col sm:flex-row gap-5"
                   >
                     <Link to="/formations">
-                      <Button size="lg" className="w-full sm:w-auto bg-[#009dd7] hover:bg-[#0087ba] text-white font-semibold px-8 py-3 rounded-lg shadow-lg transition-all">
+                      <Button size="lg" className="w-full sm:w-auto bg-[#009dd7] hover:bg-[#0087ba] text-white font-semibold text-base md:text-lg px-10 py-4 rounded-lg shadow-lg transition-all">
                         Découvrir nos formations
                       </Button>
                     </Link>
                     <a href="https://candidature.univ-antilles.fr" target="_blank" rel="noopener noreferrer">
-                      <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-[#009dd7] font-semibold px-8 py-3 rounded-lg transition-all">
+                      <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-[#009dd7] font-semibold text-base md:text-lg px-10 py-4 rounded-lg transition-all">
                         Candidater maintenant
                       </Button>
                     </a>
