@@ -120,19 +120,19 @@ const VieEtudiante = () => {
             </h2>
             <ul className="space-y-3 text-gray-600">
               <li className="flex items-start">
-                <span className="text-[#009dd7] mr-2">•</span>
+                <span className="text-[#13316C] mr-2">•</span>
                 <span>Restaurant universitaire CROUS</span>
               </li>
               <li className="flex items-start">
-                <span className="text-[#009dd7] mr-2">•</span>
+                <span className="text-[#13316C] mr-2">•</span>
                 <span>Bibliothèque universitaire</span>
               </li>
               <li className="flex items-start">
-                <span className="text-[#009dd7] mr-2">•</span>
+                <span className="text-[#13316C] mr-2">•</span>
                 <span>Service de santé (SSU)</span>
               </li>
               <li className="flex items-start">
-                <span className="text-[#009dd7] mr-2">•</span>
+                <span className="text-[#13316C] mr-2">•</span>
                 <span>Transports étudiants</span>
               </li>
             </ul>
@@ -147,7 +147,7 @@ const VieEtudiante = () => {
             </p>
             <a
               href="/contact"
-              className="inline-block px-6 py-3 bg-[#009dd7] text-white font-semibold rounded-lg hover:bg-[#0087ba] transition-colors"
+              className="inline-block px-6 py-3 bg-[#13316C] text-white font-semibold rounded-lg hover:bg-[#0f2856] transition-colors"
             >
               Nous contacter
             </a>

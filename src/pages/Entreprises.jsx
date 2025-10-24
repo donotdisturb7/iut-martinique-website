@@ -111,7 +111,7 @@ const Entreprises = () => {
           </p>
           <a
             href="/contact"
-            className="inline-block px-8 py-4 bg-[#009dd7] text-white font-semibold rounded-lg hover:bg-[#0087ba] transition-colors"
+            className="inline-block px-8 py-4 bg-[#13316C] text-white font-semibold rounded-lg hover:bg-[#0f2856] transition-colors"
           >
             Nous contacter
           </a>

@@ -9,9 +9,20 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 from-outremer-600 to-outremer-900 text-white">
+    <footer className="relative bg-gray-900 from-outremer-600 to-outremer-900 text-white overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <img 
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80" 
+          alt="" 
+          className="w-full h-full object-cover object-center opacity-20"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/95 to-primary/98"></div>
+      </div>
+      
       {/* Vague décorative en haut du footer */}
-      <div className="w-full overflow-hidden">
+      <div className="relative z-10 w-full overflow-hidden">
         <svg className="w-full h-12 -mb-1" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path 
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" 
@@ -21,13 +32,14 @@ const Footer = () => {
       </div>
       
       {/* Contenu principal du footer */}
-      <Container>
+      <div className="relative z-10">
+        <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-12">
           {/* Colonne 1: Logo et présentation */}
           <div className="space-y-4">
             <Link to="/" className="inline-block mb-4">
               <img
-                src="https://s3.us-east-2.amazonaws.com/harrowco.fr/IUT-Martinique/Logo_couleur_ua_martinique.svg"
+                src="/src/assets/images/Logo_couleur_ua_martinique.svg"
                 alt="IUT de la martinique"
                 className="h-16 w-auto"
                 style={{ filter: 'brightness(0) invert(1)' }}
@@ -171,10 +183,11 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-      </Container>
+        </Container>
+      </div>
 
       {/* Barre de copyright */}
-      <div className="bg-outremer-900 py-4">
+      <div className="relative z-10 bg-outremer-900 py-4">
         <Container>
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
             <p>&copy; {currentYear} IUT de la Martinique - Université des Antilles. Tous droits réservés.</p>

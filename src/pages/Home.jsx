@@ -10,14 +10,14 @@ const Home = () => {
       title: "Signature d'un nouveau partenariat avec Orange Caraïbe",
       category: "Partenariats",
       subcategory: "Entreprises",
-      image: 'https://s3.us-east-2.amazonaws.com/harrowco.fr/IUT-Martinique/image-IUT3.jpg'
+      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80'
     },
     {
       id: 2,
       title: "La saison culturelle est lancée",
       category: "Culture",
       subcategory: "Vie étudiante",
-      image: '/image-remise-diplome.jpg'
+      image: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'
     },
     {
       id: 3,
@@ -87,7 +87,7 @@ const Home = () => {
             </motion.h2>
             <Link
               to="/contact"
-              className="text-[#009dd7] hover:text-[#0087ba] font-semibold transition-colors"
+              className="text-[#13316C] hover:text-[#0f2856] font-semibold transition-colors"
             >
               Toutes les actualités →
             </Link>
@@ -111,11 +111,11 @@ const Home = () => {
                   </div>
                   <div className="space-y-2">
                     <div className="flex items-center gap-2 text-sm">
-                      <span className="text-[#009dd7] font-semibold">{actu.category}</span>
+                      <span className="text-[#13316C] font-semibold">{actu.category}</span>
                       <span className="text-gray-400">•</span>
                       <span className="text-gray-600">{actu.subcategory}</span>
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#009dd7] transition-colors">
+                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#13316C] transition-colors">
                       {actu.title}
                     </h3>
                   </div>
@@ -127,9 +127,9 @@ const Home = () => {
       </section>
 
       {/* Agenda */}
-      <section className="relative py-20 bg-gradient-to-br from-[#009dd7]/5 to-blue-50 overflow-hidden">
+      <section className="relative py-20 bg-gradient-to-br from-[#13316C]/5 to-blue-50 overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <h2 className="text-[12rem] font-black text-[#009dd7] opacity-[0.15] select-none">
+          <h2 className="text-[12rem] font-black text-[#13316C] opacity-[0.15] select-none">
             AGENDA
           </h2>
         </div>
@@ -145,7 +145,7 @@ const Home = () => {
             </motion.h2>
             <Link
               to="/contact"
-              className="text-[#009dd7] hover:text-[#0087ba] font-semibold transition-colors"
+              className="text-[#13316C] hover:text-[#0f2856] font-semibold transition-colors"
             >
               Tous les événements →
             </Link>
@@ -162,12 +162,12 @@ const Home = () => {
               >
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 text-center">
-                    <div className="text-3xl font-bold text-[#009dd7]">{event.dateDebut}</div>
+                    <div className="text-3xl font-bold text-[#13316C]">{event.dateDebut}</div>
                     <div className="text-sm text-gray-600 uppercase">{event.mois}</div>
                     {event.dateFin !== event.dateDebut && (
                       <>
                         <div className="text-gray-400 my-1">↓</div>
-                        <div className="text-2xl font-bold text-[#009dd7]">{event.dateFin}</div>
+                        <div className="text-2xl font-bold text-[#13316C]">{event.dateFin}</div>
                       </>
                     )}
                   </div>
@@ -176,7 +176,7 @@ const Home = () => {
                       {event.title}
                     </h3>
                     <div className="flex flex-col gap-1 text-sm">
-                      <span className="text-[#009dd7] font-semibold">{event.category}</span>
+                      <span className="text-[#13316C] font-semibold">{event.category}</span>
                       <span className="text-gray-600">{event.subcategory}</span>
                     </div>
                   </div>
@@ -216,7 +216,7 @@ const Home = () => {
               </p>
               <Link
                 to="/catalogue-formations"
-                className="inline-block px-8 py-4 bg-[#009dd7] hover:bg-[#0087ba] text-white font-semibold rounded-xl transition-colors shadow-lg hover:shadow-xl"
+                className="inline-block px-8 py-4 bg-[#13316C] hover:bg-[#0f2856] text-white font-semibold rounded-xl transition-colors shadow-lg hover:shadow-xl"
               >
                 Trouver ma formation
               </Link>
@@ -243,11 +243,11 @@ const Home = () => {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/image-remise-diplome.jpg" 
+            src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
             alt="Recherche" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 backdrop-blur-md bg-[#009dd7]/85"></div>
+          <div className="absolute inset-0 backdrop-blur-md bg-[#13316C]/85"></div>
         </div>
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <h2 className="text-[10rem] font-black text-white opacity-[0.12] select-none">
@@ -276,7 +276,7 @@ const Home = () => {
             </p>
             <Link
               to="/recherche"
-              className="inline-block px-8 py-4 bg-white text-[#009dd7] hover:bg-gray-100 font-semibold rounded-xl transition-colors shadow-xl"
+              className="inline-block px-8 py-4 bg-white text-[#13316C] hover:bg-gray-100 font-semibold rounded-xl transition-colors shadow-xl"
             >
               En savoir plus
             </Link>
@@ -301,7 +301,7 @@ const Home = () => {
             >
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="/erasmus.jpg" 
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80" 
                   alt="Programme Erasmus International" 
                   className="w-full h-full object-cover"
                 />
@@ -323,7 +323,7 @@ const Home = () => {
               </p>
               <Link
                 to="/contact"
-                className="inline-block px-8 py-4 bg-[#009dd7] hover:bg-[#0087ba] text-white font-semibold rounded-xl transition-colors shadow-lg hover:shadow-xl"
+                className="inline-block px-8 py-4 bg-[#13316C] hover:bg-[#0f2856] text-white font-semibold rounded-xl transition-colors shadow-lg hover:shadow-xl"
               >
                 En savoir plus
               </Link>
@@ -333,9 +333,9 @@ const Home = () => {
       </section>
 
       {/* Vie des campus - Grille avec images */}
-      <section className="relative py-20 bg-gradient-to-br from-[#009dd7]/5 to-blue-50 overflow-hidden">
+      <section className="relative py-20 bg-gradient-to-br from-[#13316C]/5 to-blue-50 overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <h2 className="text-[8rem] font-black text-[#009dd7] opacity-[0.15] select-none">
+          <h2 className="text-[8rem] font-black text-[#13316C] opacity-[0.15] select-none">
             VIE CAMPUS
           </h2>
         </div>
@@ -357,8 +357,8 @@ const Home = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { title: 'IUT', image: '/img-iut.jpg', link: '/contact' },
-              { title: 'Culture', image: '/image-remise-diplome.jpg', link: '/vie-etudiante' },
+              { title: 'IUT', image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80', link: '/contact' },
+              { title: 'Culture', image: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80', link: '/vie-etudiante' },
               { title: 'Vie étudiante', image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwelcomedesk.univ-toulouse.fr%2Fsites%2Fdefault%2Ffiles%2Fmedia%2F2022-01%2Fschema-vie-etudiante-campus.jpg&f=1&nofb=1&ipt=3a556d491b4483114c2d5edd23df819a846348f71be3623a9a33b6820715f185', link: '/vie-etudiante' },
               { title: 'Sport', image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthvnext.bing.com%2Fth%2Fid%2FOIP.grO-sw81cTjH2cN-BtP1NAHaE7%3Fcb%3Ducfimg2%26pid%3DApi%26ucfimg%3D1&f=1&ipt=c1ba93b990fd7b2a76f261a24feb1902ea79077d06bc629af25d52b452bee517&ipo=images', link: '/vie-etudiante' }
             ].map((item, index) => (
@@ -378,7 +378,7 @@ const Home = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                     <div className="absolute bottom-0 left-0 right-0 p-4">
-                      <h3 className="text-white text-xl font-bold group-hover:text-[#009dd7] transition-colors">
+                      <h3 className="text-white text-xl font-bold group-hover:text-[#13316C] transition-colors">
                         {item.title}
                       </h3>
                     </div>
@@ -396,11 +396,11 @@ const Home = () => {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/img-iut.jpg" 
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80" 
             alt="Campus IUT" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 backdrop-blur-md bg-[#009dd7]/85"></div>
+          <div className="absolute inset-0 backdrop-blur-md bg-[#13316C]/85"></div>
         </div>
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <h2 className="text-[12rem] font-black text-white opacity-[0.12] select-none">
@@ -429,7 +429,7 @@ const Home = () => {
             </p>
             <Link
               to="/contact"
-              className="inline-block px-8 py-4 bg-white text-[#009dd7] hover:bg-gray-100 font-semibold rounded-xl transition-colors shadow-xl"
+              className="inline-block px-8 py-4 bg-white text-[#13316C] hover:bg-gray-100 font-semibold rounded-xl transition-colors shadow-xl"
             >
               En savoir plus
             </Link>
@@ -463,7 +463,7 @@ const Home = () => {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition-shadow"
               >
-                <div className="text-5xl font-bold text-[#009dd7] mb-3">{stat.number}</div>
+                <div className="text-5xl font-bold text-[#13316C] mb-3">{stat.number}</div>
                 <div className="text-sm text-gray-600 font-medium leading-tight">{stat.label}</div>
               </motion.div>
             ))}

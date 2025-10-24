@@ -86,7 +86,7 @@ const Recherche = () => {
       pageName="RECHERCHE"
       pageTitle="Recherche"
       pageSubtitle="Innovation et développement au service du territoire caribéen"
-      heroImage="/image-remise-diplome.jpg"
+      heroImage="/background-hero1.jpg"
     >
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         {/* Introduction */}

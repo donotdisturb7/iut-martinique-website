@@ -33,7 +33,7 @@ const FormationDetail = () => {
       <Container>
         <Link 
           to="/formations"
-          className="inline-flex items-center gap-2 text-gray-600 hover:text-[#009dd7] mb-6 transition-colors"
+          className="inline-flex items-center gap-2 text-gray-600 hover:text-[#13316C] mb-6 transition-colors"
         >
           <FiArrowLeft /> Retour aux formations
         </Link>
@@ -59,7 +59,7 @@ const FormationDetail = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="inline-block bg-[#009dd7] text-white px-4 py-2 rounded-full text-sm font-bold mb-4"
+                className="inline-block bg-[#13316C] text-white px-4 py-2 rounded-full text-sm font-bold mb-4"
               >
                 {formation.type} - {formation.code}
               </motion.span>
@@ -94,8 +94,8 @@ const FormationDetail = () => {
               className="bg-white rounded-2xl shadow-lg p-8"
             >
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-[#009dd7]/10 rounded-xl flex items-center justify-center">
-                  <FiBook className="w-6 h-6 text-[#009dd7]" />
+                <div className="w-12 h-12 bg-[#13316C]/10 rounded-xl flex items-center justify-center">
+                  <FiBook className="w-6 h-6 text-[#13316C]" />
                 </div>
                 <h2 className="text-3xl font-bold text-gray-900">Présentation</h2>
               </div>
@@ -128,8 +128,8 @@ const FormationDetail = () => {
               className="bg-white rounded-2xl shadow-lg p-8"
             >
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-[#009dd7]/10 rounded-xl flex items-center justify-center">
-                  <FiCheckCircle className="w-6 h-6 text-[#009dd7]" />
+                <div className="w-12 h-12 bg-[#13316C]/10 rounded-xl flex items-center justify-center">
+                  <FiCheckCircle className="w-6 h-6 text-[#13316C]" />
                 </div>
                 <h2 className="text-3xl font-bold text-gray-900">Objectifs pédagogiques</h2>
               </div>
@@ -149,8 +149,8 @@ const FormationDetail = () => {
                     'Maîtriser les outils numériques et collaboratifs',
                     'Comprendre les enjeux économiques et sociétaux du secteur'
                   ].map((objectif, index) => (
-                    <div key={index} className="flex items-start gap-3 p-4 bg-gray-50 rounded-xl hover:bg-[#009dd7]/5 transition-colors">
-                      <FiCheckCircle className="w-5 h-5 text-[#009dd7] flex-shrink-0 mt-1" />
+                    <div key={index} className="flex items-start gap-3 p-4 bg-gray-50 rounded-xl hover:bg-[#13316C]/5 transition-colors">
+                      <FiCheckCircle className="w-5 h-5 text-[#13316C] flex-shrink-0 mt-1" />
                       <p className="text-gray-700 text-sm leading-relaxed">{objectif}</p>
                     </div>
                   ))}
@@ -166,39 +166,39 @@ const FormationDetail = () => {
               className="bg-white rounded-2xl shadow-lg p-8"
             >
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-[#009dd7]/10 rounded-xl flex items-center justify-center">
-                  <FiAward className="w-6 h-6 text-[#009dd7]" />
+                <div className="w-12 h-12 bg-[#13316C]/10 rounded-xl flex items-center justify-center">
+                  <FiAward className="w-6 h-6 text-[#13316C]" />
                 </div>
                 <h2 className="text-3xl font-bold text-gray-900">Compétences visées</h2>
               </div>
               <div className="space-y-6">
                 {/* Bloc compétences transversales */}
-                <div className="border-l-4 border-[#009dd7] pl-6 py-2">
+                <div className="border-l-4 border-[#13316C] pl-6 py-2">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Compétences transversales</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 bg-[#009dd7] rounded-full mt-2 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-[#13316C] rounded-full mt-2 flex-shrink-0"></span>
                       <div>
                         <p className="font-semibold text-gray-900">Communication professionnelle</p>
                         <p className="text-gray-600 text-sm mt-1">Rédiger des rapports techniques, présenter des projets, communiquer efficacement en français et en anglais avec différents interlocuteurs</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 bg-[#009dd7] rounded-full mt-2 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-[#13316C] rounded-full mt-2 flex-shrink-0"></span>
                       <div>
                         <p className="font-semibold text-gray-900">Gestion de projet</p>
                         <p className="text-gray-600 text-sm mt-1">Planifier, organiser et mener à bien des projets complexes en respectant les délais, le budget et les objectifs fixés</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 bg-[#009dd7] rounded-full mt-2 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-[#13316C] rounded-full mt-2 flex-shrink-0"></span>
                       <div>
                         <p className="font-semibold text-gray-900">Travail collaboratif</p>
                         <p className="text-gray-600 text-sm mt-1">Collaborer efficacement au sein d'équipes pluridisciplinaires et interculturelles</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 bg-[#009dd7] rounded-full mt-2 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-[#13316C] rounded-full mt-2 flex-shrink-0"></span>
                 <div>
                         <p className="font-semibold text-gray-900">Veille technologique</p>
                         <p className="text-gray-600 text-sm mt-1">Se tenir informé des évolutions du secteur et intégrer les innovations dans sa pratique professionnelle</p>
@@ -208,13 +208,13 @@ const FormationDetail = () => {
                 </div>
 
                 {/* Bloc compétences techniques */}
-                <div className="border-l-4 border-[#009dd7] pl-6 py-2">
+                <div className="border-l-4 border-[#13316C] pl-6 py-2">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Compétences techniques et scientifiques</h3>
                   <ul className="space-y-3">
                     {formation.parcours && formation.parcours.length > 0 ? (
                       formation.parcours.map((parcour, index) => (
                         <li key={index} className="flex items-start gap-3">
-                          <span className="w-2 h-2 bg-[#009dd7] rounded-full mt-2 flex-shrink-0"></span>
+                          <span className="w-2 h-2 bg-[#13316C] rounded-full mt-2 flex-shrink-0"></span>
                           <div>
                             <p className="font-semibold text-gray-900">{parcour}</p>
                             <p className="text-gray-600 text-sm mt-1">Maîtrise approfondie des concepts, méthodes et outils spécifiques à ce domaine d'expertise</p>
@@ -224,21 +224,21 @@ const FormationDetail = () => {
                     ) : (
                       <>
                         <li className="flex items-start gap-3">
-                          <span className="w-2 h-2 bg-[#009dd7] rounded-full mt-2 flex-shrink-0"></span>
+                          <span className="w-2 h-2 bg-[#13316C] rounded-full mt-2 flex-shrink-0"></span>
                           <div>
                             <p className="font-semibold text-gray-900">Expertise métier</p>
                             <p className="text-gray-600 text-sm mt-1">Maîtrise des concepts fondamentaux et des techniques avancées du domaine</p>
                           </div>
                         </li>
                         <li className="flex items-start gap-3">
-                          <span className="w-2 h-2 bg-[#009dd7] rounded-full mt-2 flex-shrink-0"></span>
+                          <span className="w-2 h-2 bg-[#13316C] rounded-full mt-2 flex-shrink-0"></span>
                           <div>
                             <p className="font-semibold text-gray-900">Outils professionnels</p>
                             <p className="text-gray-600 text-sm mt-1">Utilisation experte des logiciels et équipements standards du secteur</p>
                           </div>
                         </li>
                         <li className="flex items-start gap-3">
-                          <span className="w-2 h-2 bg-[#009dd7] rounded-full mt-2 flex-shrink-0"></span>
+                          <span className="w-2 h-2 bg-[#13316C] rounded-full mt-2 flex-shrink-0"></span>
                 <div>
                             <p className="font-semibold text-gray-900">Méthodologie</p>
                             <p className="text-gray-600 text-sm mt-1">Application rigoureuse des méthodes et normes professionnelles</p>
@@ -259,8 +259,8 @@ const FormationDetail = () => {
               className="bg-white rounded-2xl shadow-lg p-8"
             >
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-[#009dd7]/10 rounded-xl flex items-center justify-center">
-                  <FiBook className="w-6 h-6 text-[#009dd7]" />
+                <div className="w-12 h-12 bg-[#13316C]/10 rounded-xl flex items-center justify-center">
+                  <FiBook className="w-6 h-6 text-[#13316C]" />
                 </div>
                 <h2 className="text-3xl font-bold text-gray-900">Programme détaillé</h2>
               </div>
@@ -271,10 +271,10 @@ const FormationDetail = () => {
               <div className="space-y-4">
                 {formation.type === 'BUT' ? (
                   <>
-                    <div className="border rounded-xl p-6 hover:border-[#009dd7] transition-colors">
+                    <div className="border rounded-xl p-6 hover:border-[#13316C] transition-colors">
                       <div className="flex justify-between items-start mb-3">
                         <h3 className="text-lg font-bold text-gray-900">Première année - Découverte</h3>
-                        <span className="bg-[#009dd7] text-white px-3 py-1 rounded-full text-sm font-bold">600h</span>
+                        <span className="bg-[#13316C] text-white px-3 py-1 rounded-full text-sm font-bold">600h</span>
                       </div>
                       <p className="text-gray-600 text-sm mb-3">
                         Acquisition des fondamentaux théoriques et pratiques. Initiation aux méthodes de travail universitaire 
@@ -282,32 +282,32 @@ const FormationDetail = () => {
                       </p>
                       <ul className="space-y-2 text-sm text-gray-700">
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE1.1 - Bases fondamentales et mise à niveau (150h)</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE1.2 - Méthodologie et outils professionnels (120h)</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE1.3 - Initiation pratique et projets tutorés (180h)</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE1.4 - Communication et anglais professionnel (100h)</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE1.5 - Stage découverte entreprise (4 semaines)</span>
                         </li>
                       </ul>
                     </div>
 
-                    <div className="border rounded-xl p-6 hover:border-[#009dd7] transition-colors">
+                    <div className="border rounded-xl p-6 hover:border-[#13316C] transition-colors">
                       <div className="flex justify-between items-start mb-3">
                         <h3 className="text-lg font-bold text-gray-900">Deuxième année - Approfondissement</h3>
-                        <span className="bg-[#009dd7] text-white px-3 py-1 rounded-full text-sm font-bold">650h</span>
+                        <span className="bg-[#13316C] text-white px-3 py-1 rounded-full text-sm font-bold">650h</span>
                       </div>
                       <p className="text-gray-600 text-sm mb-3">
                         Développement des compétences techniques et transversales. Début de la spécialisation et travail 
@@ -315,32 +315,32 @@ const FormationDetail = () => {
                       </p>
                       <ul className="space-y-2 text-sm text-gray-700">
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE2.1 - Concepts avancés et spécialisation (180h)</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE2.2 - Gestion de projets complexes (140h)</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE2.3 - Pratiques professionnelles avancées (200h)</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE2.4 - Management et conduite de projet (80h)</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE2.5 - Stage application en entreprise (8 semaines)</span>
                         </li>
                       </ul>
                     </div>
 
-                    <div className="border rounded-xl p-6 hover:border-[#009dd7] transition-colors">
+                    <div className="border rounded-xl p-6 hover:border-[#13316C] transition-colors">
                       <div className="flex justify-between items-start mb-3">
                         <h3 className="text-lg font-bold text-gray-900">Troisième année - Expertise</h3>
-                        <span className="bg-[#009dd7] text-white px-3 py-1 rounded-full text-sm font-bold">550h + stage</span>
+                        <span className="bg-[#13316C] text-white px-3 py-1 rounded-full text-sm font-bold">550h + stage</span>
                       </div>
                       <p className="text-gray-600 text-sm mb-3">
                         Consolidation de l'expertise métier. Parcours de spécialisation au choix. Préparation intensive 
@@ -348,23 +348,23 @@ const FormationDetail = () => {
                       </p>
                       <ul className="space-y-2 text-sm text-gray-700">
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE3.1 - Parcours de spécialisation (200h)</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE3.2 - Projet professionnel de fin d'études (150h)</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE3.3 - Séminaires professionnels et conférences (100h)</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE3.4 - Innovation et recherche appliquée (100h)</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE3.5 - Stage longue durée ou alternance (12-16 semaines)</span>
                         </li>
                       </ul>
@@ -372,47 +372,47 @@ const FormationDetail = () => {
                   </>
                 ) : (
                   <>
-                    <div className="border rounded-xl p-6 hover:border-[#009dd7] transition-colors">
+                    <div className="border rounded-xl p-6 hover:border-[#13316C] transition-colors">
                       <div className="flex justify-between items-start mb-3">
                         <h3 className="text-lg font-bold text-gray-900">Semestre 1 - Fondamentaux</h3>
-                        <span className="bg-[#009dd7] text-white px-3 py-1 rounded-full text-sm font-bold">300h</span>
+                        <span className="bg-[#13316C] text-white px-3 py-1 rounded-full text-sm font-bold">300h</span>
                       </div>
                       <ul className="space-y-2 text-sm text-gray-700">
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE1 - Fondamentaux métier et mise à niveau (120h)</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE2 - Outils et méthodes professionnelles (100h)</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE3 - Projet tutoré (80h)</span>
                         </li>
                       </ul>
                     </div>
 
-                    <div className="border rounded-xl p-6 hover:border-[#009dd7] transition-colors">
+                    <div className="border rounded-xl p-6 hover:border-[#13316C] transition-colors">
                       <div className="flex justify-between items-start mb-3">
                         <h3 className="text-lg font-bold text-gray-900">Semestre 2 - Professionnalisation</h3>
-                        <span className="bg-[#009dd7] text-white px-3 py-1 rounded-full text-sm font-bold">250h + stage</span>
+                        <span className="bg-[#13316C] text-white px-3 py-1 rounded-full text-sm font-bold">250h + stage</span>
                       </div>
                       <ul className="space-y-2 text-sm text-gray-700">
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE4 - Approfondissement technique (120h)</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE5 - Management et gestion de projet (80h)</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE6 - Projet professionnel (50h)</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#009dd7]">•</span>
+                          <span className="text-[#13316C]">•</span>
                           <span>UE7 - Stage en entreprise (12-16 semaines)</span>
                         </li>
                       </ul>
@@ -427,11 +427,11 @@ const FormationDetail = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="bg-gradient-to-br from-[#009dd7]/5 to-blue-50 rounded-2xl shadow-lg p-8"
+              className="bg-gradient-to-br from-[#13316C]/5 to-blue-50 rounded-2xl shadow-lg p-8"
             >
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-md">
-                  <FiUsers className="w-6 h-6 text-[#009dd7]" />
+                  <FiUsers className="w-6 h-6 text-[#13316C]" />
                 </div>
                 <h2 className="text-3xl font-bold text-gray-900">Méthodes pédagogiques</h2>
                 </div>
@@ -490,8 +490,8 @@ const FormationDetail = () => {
               className="bg-white rounded-2xl shadow-lg p-8"
             >
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-[#009dd7]/10 rounded-xl flex items-center justify-center">
-                  <FiBriefcase className="w-6 h-6 text-[#009dd7]" />
+                <div className="w-12 h-12 bg-[#13316C]/10 rounded-xl flex items-center justify-center">
+                  <FiBriefcase className="w-6 h-6 text-[#13316C]" />
                 </div>
                 <h2 className="text-3xl font-bold text-gray-900">Débouchés et perspectives</h2>
               </div>
@@ -499,7 +499,7 @@ const FormationDetail = () => {
                 {/* Insertion professionnelle */}
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                    <FiTrendingUp className="text-[#009dd7]" />
+                    <FiTrendingUp className="text-[#13316C]" />
                     Insertion professionnelle
                   </h3>
                   <p className="text-gray-700 text-sm mb-4">
@@ -520,14 +520,14 @@ const FormationDetail = () => {
                         'Analyste / Gestionnaire'
                       ].map((metier, index) => (
                         <li key={index} className="flex items-start gap-2 text-gray-700">
-                          <span className="text-[#009dd7] mt-1">→</span>
+                          <span className="text-[#13316C] mt-1">→</span>
                           <span>{metier}</span>
                         </li>
                       ))}
                   </ul>
                   </div>
-                  <div className="mt-6 p-4 bg-[#009dd7]/10 rounded-xl">
-                    <p className="text-sm font-semibold text-[#009dd7]">
+                  <div className="mt-6 p-4 bg-[#13316C]/10 rounded-xl">
+                    <p className="text-sm font-semibold text-[#13316C]">
                       Taux d'insertion professionnelle : 85% à 6 mois
                     </p>
                   </div>
@@ -536,7 +536,7 @@ const FormationDetail = () => {
                 {/* Poursuite d'études */}
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                    <FiBook className="text-[#009dd7]" />
+                    <FiBook className="text-[#13316C]" />
                     Poursuite d'études
                   </h3>
                   <p className="text-gray-700 text-sm mb-4">
@@ -549,46 +549,46 @@ const FormationDetail = () => {
                       {formation.type === 'BUT' ? (
                         <>
                           <li className="flex items-start gap-2 text-gray-700">
-                            <span className="text-[#009dd7] mt-1">→</span>
+                            <span className="text-[#13316C] mt-1">→</span>
                             <span>Master universitaire (Bac+5)</span>
                           </li>
                           <li className="flex items-start gap-2 text-gray-700">
-                            <span className="text-[#009dd7] mt-1">→</span>
+                            <span className="text-[#13316C] mt-1">→</span>
                             <span>École d'ingénieurs sur concours</span>
                           </li>
                           <li className="flex items-start gap-2 text-gray-700">
-                            <span className="text-[#009dd7] mt-1">→</span>
+                            <span className="text-[#13316C] mt-1">→</span>
                             <span>École de commerce / IAE</span>
                           </li>
                           <li className="flex items-start gap-2 text-gray-700">
-                            <span className="text-[#009dd7] mt-1">→</span>
+                            <span className="text-[#13316C] mt-1">→</span>
                             <span>Licence professionnelle de spécialisation</span>
                           </li>
                         </>
                       ) : (
                         <>
                           <li className="flex items-start gap-2 text-gray-700">
-                            <span className="text-[#009dd7] mt-1">→</span>
+                            <span className="text-[#13316C] mt-1">→</span>
                             <span>Master professionnel (Bac+5)</span>
                           </li>
                           <li className="flex items-start gap-2 text-gray-700">
-                            <span className="text-[#009dd7] mt-1">→</span>
+                            <span className="text-[#13316C] mt-1">→</span>
                             <span>Master spécialisé</span>
                           </li>
                           <li className="flex items-start gap-2 text-gray-700">
-                            <span className="text-[#009dd7] mt-1">→</span>
+                            <span className="text-[#13316C] mt-1">→</span>
                             <span>MBA / Executive MBA</span>
                           </li>
                         </>
                       )}
                       <li className="flex items-start gap-2 text-gray-700">
-                        <span className="text-[#009dd7] mt-1">→</span>
+                        <span className="text-[#13316C] mt-1">→</span>
                         <span>Formation continue / Diplôme d'Université</span>
                       </li>
                   </ul>
                   </div>
-                  <div className="mt-6 p-4 bg-[#009dd7]/10 rounded-xl">
-                    <p className="text-sm font-semibold text-[#009dd7]">
+                  <div className="mt-6 p-4 bg-[#13316C]/10 rounded-xl">
+                    <p className="text-sm font-semibold text-[#13316C]">
                       40% des diplômés poursuivent en Master
                     </p>
                   </div>
@@ -605,7 +605,7 @@ const FormationDetail = () => {
             >
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Témoignages d'étudiants</h2>
               <div className="space-y-6">
-                <div className="border-l-4 border-[#009dd7] pl-6 py-4 bg-gray-50 rounded-r-xl">
+                <div className="border-l-4 border-[#13316C] pl-6 py-4 bg-gray-50 rounded-r-xl">
                   <p className="text-gray-700 italic mb-3">
                     "Cette formation m'a permis d'acquérir toutes les compétences nécessaires pour réussir mon insertion 
                     professionnelle. Les stages en entreprise et l'alternance m'ont donné une vraie expérience terrain."
@@ -616,7 +616,7 @@ const FormationDetail = () => {
                   <p className="text-xs text-gray-600">Actuellement en poste chez Orange Caraïbe</p>
                 </div>
 
-                <div className="border-l-4 border-[#009dd7] pl-6 py-4 bg-gray-50 rounded-r-xl">
+                <div className="border-l-4 border-[#13316C] pl-6 py-4 bg-gray-50 rounded-r-xl">
                   <p className="text-gray-700 italic mb-3">
                     "L'accompagnement des enseignants est exceptionnel. J'ai pu réaliser mon projet professionnel grâce 
                     au réseau de l'IUT et aux opportunités offertes par la formation."
@@ -627,7 +627,7 @@ const FormationDetail = () => {
                   <p className="text-xs text-gray-600">Poursuit en Master à l'Université des Antilles</p>
                 </div>
 
-                <div className="border-l-4 border-[#009dd7] pl-6 py-4 bg-gray-50 rounded-r-xl">
+                <div className="border-l-4 border-[#13316C] pl-6 py-4 bg-gray-50 rounded-r-xl">
                   <p className="text-gray-700 italic mb-3">
                     "Le cadre d'études est idéal en Martinique ! Formation de qualité, équipements modernes et une 
                     ambiance de travail conviviale. Je recommande vivement !"
@@ -648,7 +648,7 @@ const FormationDetail = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-gradient-to-br from-[#009dd7] to-[#0087ba] text-white rounded-2xl shadow-xl p-6"
+              className="bg-gradient-to-br from-[#13316C] to-[#0f2856] text-white rounded-2xl shadow-xl p-6"
             >
               <h3 className="text-2xl font-bold mb-6">Informations clés</h3>
               <div className="space-y-4">
@@ -725,13 +725,13 @@ const FormationDetail = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="bg-gradient-to-br from-[#009dd7] to-[#0087ba] text-white rounded-2xl p-6 shadow-xl"
+              className="bg-gradient-to-br from-[#13316C] to-[#0f2856] text-white rounded-2xl p-6 shadow-xl"
             >
               <h3 className="text-xl font-bold mb-3">Intéressé(e) ?</h3>
               <p className="text-sm mb-4 text-white/90">
                 Découvrez comment candidater à cette formation et rejoindre l'IUT de la Martinique
               </p>
-              <Button className="w-full bg-white text-[#009dd7] hover:bg-gray-100">
+              <Button className="w-full bg-white text-[#13316C] hover:bg-gray-100">
                 Candidater
               </Button>
             </motion.div>
@@ -746,8 +746,8 @@ const FormationDetail = () => {
               <h3 className="text-xl font-bold text-gray-900 mb-4">Dates clés</h3>
               <div className="space-y-3 text-sm">
                 <div className="flex items-start gap-3 pb-3 border-b border-gray-100">
-                  <div className="w-14 h-14 bg-[#009dd7]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="font-bold text-[#009dd7]">JAN</span>
+                  <div className="w-14 h-14 bg-[#13316C]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="font-bold text-[#13316C]">JAN</span>
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">Journées Portes Ouvertes</p>
@@ -755,8 +755,8 @@ const FormationDetail = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-3 pb-3 border-b border-gray-100">
-                  <div className="w-14 h-14 bg-[#009dd7]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="font-bold text-[#009dd7]">MAR</span>
+                  <div className="w-14 h-14 bg-[#13316C]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="font-bold text-[#13316C]">MAR</span>
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">Ouverture candidatures</p>
@@ -764,8 +764,8 @@ const FormationDetail = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-3 pb-3 border-b border-gray-100">
-                  <div className="w-14 h-14 bg-[#009dd7]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="font-bold text-[#009dd7]">JUIN</span>
+                  <div className="w-14 h-14 bg-[#13316C]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="font-bold text-[#13316C]">JUIN</span>
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">Réponses Parcoursup</p>
@@ -773,8 +773,8 @@ const FormationDetail = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-14 h-14 bg-[#009dd7]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="font-bold text-[#009dd7]">SEPT</span>
+                  <div className="w-14 h-14 bg-[#13316C]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="font-bold text-[#13316C]">SEPT</span>
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">Rentrée</p>
@@ -799,13 +799,13 @@ const FormationDetail = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">Email</p>
-                  <a href="mailto:contact@iut-martinique.fr" className="text-[#009dd7] hover:underline">
+                  <a href="mailto:contact@iut-martinique.fr" className="text-[#13316C] hover:underline">
                   contact@iut-martinique.fr
                   </a>
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">Téléphone</p>
-                  <a href="tel:+596596727300" className="text-[#009dd7] hover:underline">
+                  <a href="tel:+596596727300" className="text-[#13316C] hover:underline">
                     05 96 72 73 00
                   </a>
                 </div>
@@ -828,13 +828,13 @@ const FormationDetail = () => {
             >
               <h3 className="text-xl font-bold text-gray-900 mb-4">Documents</h3>
               <div className="space-y-2">
-                <button className="w-full text-left px-4 py-3 bg-gray-50 hover:bg-[#009dd7]/5 rounded-lg transition-colors text-sm font-medium text-gray-700 hover:text-[#009dd7]">
+                <button className="w-full text-left px-4 py-3 bg-gray-50 hover:bg-[#13316C]/5 rounded-lg transition-colors text-sm font-medium text-gray-700 hover:text-[#13316C]">
                   Plaquette de la formation (PDF)
                 </button>
-                <button className="w-full text-left px-4 py-3 bg-gray-50 hover:bg-[#009dd7]/5 rounded-lg transition-colors text-sm font-medium text-gray-700 hover:text-[#009dd7]">
+                <button className="w-full text-left px-4 py-3 bg-gray-50 hover:bg-[#13316C]/5 rounded-lg transition-colors text-sm font-medium text-gray-700 hover:text-[#13316C]">
                   Maquette pédagogique (PDF)
                 </button>
-                <button className="w-full text-left px-4 py-3 bg-gray-50 hover:bg-[#009dd7]/5 rounded-lg transition-colors text-sm font-medium text-gray-700 hover:text-[#009dd7]">
+                <button className="w-full text-left px-4 py-3 bg-gray-50 hover:bg-[#13316C]/5 rounded-lg transition-colors text-sm font-medium text-gray-700 hover:text-[#13316C]">
                   Modalités d'admission (PDF)
                 </button>
               </div>

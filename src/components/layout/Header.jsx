@@ -45,52 +45,39 @@ const Header = () => {
   return (
     <>
       <header
-        className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+        className={`fixed w-full z-40 transition-all duration-300 ${
           isScrolled && !isDetailPage 
-            ? 'bg-white/80 backdrop-blur-md shadow-md' 
+            ? 'top-0 bg-white/80 backdrop-blur-md shadow-md' 
             : isDetailPage 
-              ? 'bg-white/95 backdrop-blur-sm shadow-md' 
-              : 'bg-transparent'
-        } py-8`}
+              ? 'top-0 bg-white/95 backdrop-blur-sm shadow-md' 
+              : 'top-4 bg-transparent'
+        } py-3 md:py-4 lg:py-5`}
       >
         <Container>
-          <div className="flex items-center justify-between relative">
+          <div className="flex items-center justify-between h-[60px] md:h-[70px] lg:h-[75px] laptop:h-[80px] xl:h-[85px] 2xl:h-[90px]">
             {/* Logo à gauche */}
-            <Link to="/" className="flex items-center space-x-3 shrink-0 z-50">
-              <div className="w-12 h-12 lg:w-14 lg:h-14 flex items-center justify-center">
-                <img 
-                  src={(isDetailPage || isScrolled)
-                    ? "https://s3.us-east-2.amazonaws.com/harrowco.fr/IUT-Martinique/Logo_couleur_ua_martinique.svg"
-                    : "https://s3.us-east-2.amazonaws.com/harrowco.fr/IUT-Martinique/Logo_blanc_ua_martinique.svg"
-                  }
-                  alt="IUT Martinique" 
-                  className="h-12 lg:h-14 w-auto"
-                />
-              </div>
-              <div className="hidden lg:block">
-                <div className={`text-base lg:text-lg font-bold ${(isDetailPage || isScrolled) ? 'text-gray-900' : 'text-white'} leading-tight`}>
-                  IUT de la Martinique
-                </div>
-                <div className={`text-sm ${(isDetailPage || isScrolled) ? 'text-gray-600' : 'text-white/90'}`}>
-                  Université des Antilles
-                </div>
-              </div>
+            <Link to="/" className="flex items-center">
+              <img 
+                src="/src/assets/images/logoIUT.png"
+                alt="IUT Martinique" 
+                className="h-8 md:h-10 lg:h-11 laptop:h-12 xl:h-13 2xl:h-14 w-auto"
+              />
             </Link>
 
             {/* Navigation au centre */}
-            <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8 absolute left-1/2 transform -translate-x-1/2">
+            <nav className="hidden lg:flex items-center space-x-2 laptop:space-x-3 xl:space-x-4 2xl:space-x-6">
               {navItems.map((item) => {
                 const isActive = location.pathname === item.path;
                 return (
                   <Link
                     key={item.path}
                     to={item.path}
-                    className={`font-semibold text-sm lg:text-base uppercase tracking-wide whitespace-nowrap transition-colors ${
+                    className={`font-semibold text-xs lg:text-sm laptop:text-base xl:text-lg uppercase tracking-wide whitespace-nowrap transition-colors ${
                       isActive 
-                        ? 'text-[#009dd7]' 
+                        ? 'text-[#EF7639]' 
                         : (isDetailPage || isScrolled)
-                          ? 'text-gray-700 hover:text-[#009dd7]'
-                          : 'text-white hover:text-[#009dd7]'
+                          ? 'text-gray-700 hover:text-[#EF7639]'
+                          : 'text-white hover:text-[#EF7639]'
                     }`}
                   >
                     {item.label}
@@ -100,14 +87,14 @@ const Header = () => {
             </nav>
 
             {/* Actions à droite */}
-            <div className="flex items-center space-x-3 shrink-0">
+            <div className="flex items-center space-x-3">
               {/* Bouton changement de langue */}
               <button
                 onClick={toggleLanguage}
-                className={`hidden lg:flex items-center px-3 py-2 text-sm font-semibold transition-all border-2 rounded-lg ${
+                className={`hidden lg:flex items-center px-2 py-1 lg:px-3 lg:py-1.5 laptop:px-4 laptop:py-2 text-xs lg:text-sm laptop:text-base font-semibold transition-all border-2 rounded-lg ${
                   (isDetailPage || isScrolled)
-                    ? 'text-gray-700 hover:text-[#009dd7] border-gray-300 hover:border-[#009dd7]'
-                    : 'text-white hover:text-[#009dd7] border-white/50 hover:border-[#009dd7]'
+                    ? 'text-gray-700 hover:text-[#13316C] border-gray-300 hover:border-[#13316C]'
+                    : 'text-white hover:text-[#13316C] border-white/50 hover:border-[#13316C]'
                 }`}
                 aria-label="Changer de langue"
               >
@@ -119,37 +106,38 @@ const Header = () => {
                 href="https://myua.univ-antilles.fr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden lg:inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-[#009dd7] hover:bg-[#0087ba] rounded-lg transition-colors shadow-lg"
+                className="hidden lg:inline-flex items-center px-3 py-1 lg:px-4 lg:py-1.5 laptop:px-5 laptop:py-2 text-xs lg:text-sm laptop:text-base font-semibold text-white bg-[#13316C] hover:bg-[#0f2856] rounded-lg transition-colors shadow-lg"
               >
                 My UA
               </a>
 
+
               {/* Menu burger mobile (seulement mobile et tablette) */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className={`lg:hidden hover:text-[#009dd7] transition-colors ${
+                className={`lg:hidden hover:text-[#13316C] transition-colors ${
                   (isDetailPage || isScrolled) ? 'text-gray-900' : 'text-white'
                 }`}
                 aria-label="Menu"
               >
                 {isMobileMenuOpen ? (
-                  <FiX className="w-8 h-8" />
+                  <FiX className="w-6 h-6" />
                 ) : (
-                  <FiMenu className="w-8 h-8" />
+                  <FiMenu className="w-6 h-6" />
                 )}
               </button>
 
               {/* Bouton Search (toujours visible, tout à droite) */}
               <button
                 onClick={() => setIsSearchOpen(!isSearchOpen)}
-                className={`p-2 rounded-full transition-colors ${
+                className={`p-1.5 rounded-full transition-colors ${
                   (isDetailPage || isScrolled)
-                    ? 'hover:bg-gray-100 text-gray-900 hover:text-[#009dd7]'
-                    : 'hover:bg-white/10 text-white hover:text-[#009dd7]'
+                    ? 'hover:bg-gray-100 text-gray-900 hover:text-[#13316C]'
+                    : 'hover:bg-white/10 text-white hover:text-[#13316C]'
                 }`}
                 aria-label="Rechercher"
               >
-                <FiSearch className="w-7 h-7" />
+                <FiSearch className="w-5 h-5" />
               </button>
             </div>
           </div>
@@ -160,7 +148,7 @@ const Header = () => {
               <input
                 type="search"
                 placeholder="Rechercher..."
-                className={`w-full px-4 py-3 rounded-lg focus:ring-2 focus:ring-[#009dd7] focus:border-transparent ${
+                className={`w-full px-4 py-3 rounded-lg focus:ring-2 focus:ring-[#13316C] focus:border-transparent ${
                   (isDetailPage || isScrolled)
                     ? 'bg-gray-100 border border-gray-300 text-gray-900 placeholder-gray-500'
                     : 'bg-white/20 backdrop-blur-md border border-white/30 text-white placeholder-white/70 focus:bg-white/30'

@@ -40,7 +40,7 @@ function FrameComponent({
           <span 
             className="px-3 py-1.5 rounded-full text-xs font-bold shadow-lg transition-all duration-300"
             style={{
-              backgroundColor: isHovered ? '#009dd7' : 'rgba(255, 255, 255, 0.9)',
+              backgroundColor: isHovered ? '#13316C' : 'rgba(255, 255, 255, 0.9)',
               color: isHovered ? 'white' : '#1f2937',
             }}
           >

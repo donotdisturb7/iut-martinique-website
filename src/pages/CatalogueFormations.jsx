@@ -95,7 +95,7 @@ const CatalogueFormations = () => {
                     placeholder="Mots-clés..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:border-[#009dd7] focus:ring-2 focus:ring-[#009dd7]/20 transition-all outline-none text-sm"
+                    className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:border-[#13316C] focus:ring-2 focus:ring-[#13316C]/20 transition-all outline-none text-sm"
                   />
                 </div>
               </div>
@@ -110,7 +110,7 @@ const CatalogueFormations = () => {
                       onClick={() => setSelectedType(selectedType === type ? '' : type)}
                       className={`w-full text-left px-3 py-2 rounded-lg transition-colors text-sm ${
                         selectedType === type
-                          ? 'bg-[#009dd7] text-white'
+                          ? 'bg-[#13316C] text-white'
                           : 'hover:bg-gray-100 text-gray-700'
                       }`}
                     >
@@ -137,7 +137,7 @@ const CatalogueFormations = () => {
                       onClick={() => setSelectedDomaine(selectedDomaine === domaine ? '' : domaine)}
                       className={`w-full text-left px-3 py-2 rounded-lg transition-colors text-sm ${
                         selectedDomaine === domaine
-                          ? 'bg-[#009dd7] text-white'
+                          ? 'bg-[#13316C] text-white'
                           : 'hover:bg-gray-100 text-gray-700'
                       }`}
                     >
@@ -158,7 +158,7 @@ const CatalogueFormations = () => {
               {(selectedType || selectedDomaine || searchTerm) && (
                 <button
                   onClick={clearFilters}
-                  className="w-full px-4 py-2 text-sm text-gray-700 hover:text-[#009dd7] border border-gray-300 hover:border-[#009dd7] rounded-lg transition-colors font-medium"
+                  className="w-full px-4 py-2 text-sm text-gray-700 hover:text-[#13316C] border border-gray-300 hover:border-[#13316C] rounded-lg transition-colors font-medium"
                 >
                   Réinitialiser les filtres
                 </button>
@@ -182,7 +182,7 @@ const CatalogueFormations = () => {
                   <div className="flex flex-wrap gap-2 pt-4 border-t border-gray-200">
                     <span className="text-sm text-gray-600 font-medium">Vos critères :</span>
                     {selectedType && (
-                      <span className="inline-flex items-center gap-2 px-3 py-1 bg-[#009dd7] text-white text-sm rounded-full">
+                      <span className="inline-flex items-center gap-2 px-3 py-1 bg-[#13316C] text-white text-sm rounded-full">
                         {selectedType}
                         <button onClick={() => setSelectedType('')} className="hover:bg-white/20 rounded-full p-0.5">
                           <FiX className="w-3 h-3" />
@@ -190,7 +190,7 @@ const CatalogueFormations = () => {
                       </span>
                     )}
                     {selectedDomaine && (
-                      <span className="inline-flex items-center gap-2 px-3 py-1 bg-[#009dd7] text-white text-sm rounded-full">
+                      <span className="inline-flex items-center gap-2 px-3 py-1 bg-[#13316C] text-white text-sm rounded-full">
                         {selectedDomaine}
                         <button onClick={() => setSelectedDomaine('')} className="hover:bg-white/20 rounded-full p-0.5">
                           <FiX className="w-3 h-3" />
@@ -242,7 +242,7 @@ const CatalogueFormations = () => {
                             {formation.type}
                           </span>
                           {formation.alternance && (
-                            <span className="bg-[#009dd7] text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">
+                            <span className="bg-[#13316C] text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">
                               Alternance
                             </span>
                           )}
@@ -250,7 +250,7 @@ const CatalogueFormations = () => {
 
                         {/* Nom de la formation en bas */}
                         <div className="absolute bottom-0 left-0 right-0 p-6">
-                          <h3 className="text-white text-xl font-bold leading-tight mb-2 drop-shadow-lg group-hover:text-[#009dd7] transition-colors">
+                          <h3 className="text-white text-xl font-bold leading-tight mb-2 drop-shadow-lg group-hover:text-[#13316C] transition-colors">
                             {formation.name}
                           </h3>
                           <p className="text-white/90 text-sm font-medium drop-shadow-md mb-2">
@@ -278,7 +278,7 @@ const CatalogueFormations = () => {
                 </p>
                 <button
                   onClick={clearFilters}
-                  className="px-6 py-3 bg-[#009dd7] text-white rounded-lg font-semibold hover:bg-[#0087ba] transition-colors"
+                  className="px-6 py-3 bg-[#13316C] text-white rounded-lg font-semibold hover:bg-[#0f2856] transition-colors"
                 >
                   Réinitialiser les filtres
                 </button>
@@ -301,7 +301,7 @@ const CatalogueFormations = () => {
                 </p>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#009dd7] text-white rounded-lg font-semibold hover:bg-[#0087ba] transition-colors shadow-lg hover:shadow-xl"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#13316C] text-white rounded-lg font-semibold hover:bg-[#0f2856] transition-colors shadow-lg hover:shadow-xl"
                 >
                   Nous contacter
                 </Link>

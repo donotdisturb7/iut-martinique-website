@@ -53,7 +53,7 @@ const MobileMenu = ({ isOpen, onClose, navItems }) => {
                   href="https://myua.univ-antilles.fr"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full py-3 px-4 text-center text-white bg-[#009dd7] hover:bg-[#0087ba] rounded-md transition-colors font-medium"
+                  className="block w-full py-3 px-4 text-center text-white bg-[#13316C] hover:bg-[#0f2856] rounded-md transition-colors font-medium"
                 >
                   My UA
                 </a>

@@ -104,19 +104,19 @@ const FormationsIntro = () => {
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="bg-white rounded-xl shadow-lg p-6 text-center">
-              <div className="text-4xl font-bold text-[#009dd7] mb-2">1 200</div>
+              <div className="text-4xl font-bold text-[#13316C] mb-2">1 200</div>
               <div className="text-sm text-gray-600 font-medium">étudiants</div>
             </div>
             <div className="bg-white rounded-xl shadow-lg p-6 text-center">
-              <div className="text-4xl font-bold text-[#009dd7] mb-2">7</div>
+              <div className="text-4xl font-bold text-[#13316C] mb-2">7</div>
               <div className="text-sm text-gray-600 font-medium">formations</div>
             </div>
             <div className="bg-white rounded-xl shadow-lg p-6 text-center">
-              <div className="text-4xl font-bold text-[#009dd7] mb-2">85%</div>
+              <div className="text-4xl font-bold text-[#13316C] mb-2">85%</div>
               <div className="text-sm text-gray-600 font-medium">insertion professionnelle</div>
             </div>
             <div className="bg-white rounded-xl shadow-lg p-6 text-center">
-              <div className="text-4xl font-bold text-[#009dd7] mb-2">350</div>
+              <div className="text-4xl font-bold text-[#13316C] mb-2">350</div>
               <div className="text-sm text-gray-600 font-medium">alternants</div>
             </div>
           </div>
@@ -157,7 +157,7 @@ const FormationsIntro = () => {
 
                     {/* Titre et description en bas */}
                     <div className="absolute bottom-0 left-0 right-0 p-6">
-                      <h3 className="text-white text-xl font-bold leading-tight mb-2 drop-shadow-lg group-hover:text-[#009dd7] transition-colors">
+                      <h3 className="text-white text-xl font-bold leading-tight mb-2 drop-shadow-lg group-hover:text-[#13316C] transition-colors">
                         {section.title}
                       </h3>
                       <p className="text-white/90 text-sm drop-shadow-md">

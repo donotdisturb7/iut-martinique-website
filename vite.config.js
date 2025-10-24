@@ -8,4 +8,9 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  server: {
+    host: '0.0.0.0', // Écoute sur toutes les interfaces réseau
+    port: 5173, // Port par défaut de Vite
+    strictPort: true, // Échoue si le port est occupé
+  },
 })
