@@ -58,7 +58,7 @@ const Header = () => {
             {/* Logo à gauche */}
             <Link to="/" className="flex items-center">
               <img 
-                src="/src/assets/images/logoIUT.png"
+                src="https://s3.us-east-2.amazonaws.com/harrowco.fr/IUT-Martinique/logoIUT.png"
                 alt="IUT Martinique" 
                 className="h-8 md:h-10 lg:h-11 laptop:h-12 xl:h-13 2xl:h-14 w-auto"
               />
