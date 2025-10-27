@@ -23,7 +23,7 @@ const Footer = () => {
       
       {/* Vague décorative en haut du footer */}
       <div className="relative z-10 w-full overflow-hidden">
-        <svg className="w-full h-12 -mb-1" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <svg className="w-full h-8 sm:h-10 md:h-12 -mb-1" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path 
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" 
             className="fill-white"
@@ -34,18 +34,18 @@ const Footer = () => {
       {/* Contenu principal du footer */}
       <div className="relative z-10">
         <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 py-8 md:py-10 lg:py-12">
           {/* Colonne 1: Logo et présentation */}
-          <div className="space-y-4">
-            <Link to="/" className="inline-block mb-4">
+          <div className="space-y-4 sm:col-span-2 lg:col-span-1">
+            <Link to="/" className="inline-block mb-2 md:mb-4">
               <img
                 src="/src/assets/images/Logo_couleur_ua_martinique.svg"
                 alt="IUT de la martinique"
-                className="h-16 w-auto"
+                className="h-12 md:h-14 lg:h-16 w-auto"
                 style={{ filter: 'brightness(0) invert(1)' }}
               />
             </Link>
-            <p className="text-sm text-gray-300 leading-relaxed">
+            <p className="text-sm md:text-base text-gray-300 leading-relaxed">
               L'Institut Universitaire de Technologie de la Martinique forme les talents de demain 
               dans un cadre d'excellence académique et professionnelle.
             </p>
@@ -72,8 +72,8 @@ const Footer = () => {
           </div>
 
           {/* Colonne 2: Navigation */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-bold text-white border-b border-celestial-400 pb-2 mb-4">Navigation</h3>
+          <div className="space-y-3 md:space-y-4">
+            <h3 className="text-base md:text-lg font-bold text-white border-b border-celestial-400 pb-2 mb-3 md:mb-4">Navigation</h3>
             <ul className="space-y-3">
               <li>
                 <Link to="/formations" className="text-gray-300 hover:text-celestial-300 transition-colors flex items-center">
@@ -115,8 +115,8 @@ const Footer = () => {
           </div>
 
           {/* Colonne 3: Liens utiles */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-bold text-white border-b border-celestial-400 pb-2 mb-4">Liens utiles</h3>
+          <div className="space-y-3 md:space-y-4">
+            <h3 className="text-base md:text-lg font-bold text-white border-b border-celestial-400 pb-2 mb-3 md:mb-4">Liens utiles</h3>
             <ul className="space-y-3">
               <li>
                 <a href="https://myua.univ-antilles.fr" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-celestial-300 transition-colors">
@@ -152,8 +152,8 @@ const Footer = () => {
           </div>
 
           {/* Colonne 4: Contact */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-bold text-white border-b border-celestial-400 pb-2 mb-4">Contact</h3>
+          <div className="space-y-3 md:space-y-4">
+            <h3 className="text-base md:text-lg font-bold text-white border-b border-celestial-400 pb-2 mb-3 md:mb-4">Contact</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <FiMapPin className="w-5 h-5 text-celestial-400 mt-1 mr-3 flex-shrink-0" />
@@ -187,9 +187,9 @@ const Footer = () => {
       </div>
 
       {/* Barre de copyright */}
-      <div className="relative z-10 bg-outremer-900 py-4">
+      <div className="relative z-10 bg-outremer-900 py-3 md:py-4">
         <Container>
-          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+          <div className="flex flex-col md:flex-row justify-between items-center text-xs md:text-sm text-gray-400 gap-2">
             <p>&copy; {currentYear} IUT de la Martinique - Université des Antilles. Tous droits réservés.</p>
             <div className="mt-2 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white transition-colors mx-2">Mentions légales</a>

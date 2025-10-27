@@ -41,9 +41,9 @@ const Entreprises = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mb-16 max-w-4xl"
+          className="mb-12 md:mb-16 max-w-4xl"
         >
-            <p className="text-xl text-gray-700 leading-relaxed mb-6">
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
               L'IUT de la Martinique entretient des liens privilégiés avec le monde professionnel. 
               Recrutement, alternance, stages, projets collaboratifs : nous proposons de nombreuses 
               opportunités pour établir des partenariats durables avec les entreprises du territoire.
@@ -60,7 +60,7 @@ const Entreprises = () => {
         </motion.section>
 
         {/* Grille de services */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-12 md:mb-16 lg:mb-20">
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -101,17 +101,17 @@ const Entreprises = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-gray-50 rounded-2xl p-8 md:p-12 text-center"
+          className="bg-gray-50 rounded-xl md:rounded-2xl p-6 md:p-10 lg:p-12 text-center"
         >
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 md:mb-4">
             Intéressé par nos étudiants ?
           </h2>
-          <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-sm md:text-base text-gray-600 mb-6 md:mb-8 max-w-2xl mx-auto">
             Contactez-nous pour déposer une offre ou discuter d'un partenariat
           </p>
           <a
             href="/contact"
-            className="inline-block px-8 py-4 bg-[#13316C] text-white font-semibold rounded-lg hover:bg-[#0f2856] transition-colors"
+            className="inline-block px-6 py-3 md:px-8 md:py-4 bg-[#13316C] text-white font-semibold rounded-lg hover:bg-[#0f2856] transition-colors"
           >
             Nous contacter
           </a>

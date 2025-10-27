@@ -26,28 +26,28 @@ const Formations = () => {
       heroImage="/img-iut.jpg"
     >
       {/* Contenu principal */}
-      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 ml-4 lg:ml-8 xl:ml-12">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
 
         {/* Sections par type */}
         {sections.map((type, sectionIndex) => (
           <section
             key={type}
             id={type}
-            className="mb-20 scroll-mt-28"
+            className="mb-12 md:mb-16 lg:mb-20 scroll-mt-28"
           >
             {/* Titre de section avec ligne */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: sectionIndex * 0.1 }}
-              className="mb-8 flex items-center gap-4"
+              className="mb-6 md:mb-8 flex items-center gap-3 md:gap-4"
             >
-              <h2 className="text-3xl font-bold text-gray-900">{type}</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">{type}</h2>
               <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent" />
             </motion.div>
 
             {/* Grille de formations */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               {formationsByType[type].map((formation, index) => (
                 <motion.div
                   key={formation.id}

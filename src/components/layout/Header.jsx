@@ -65,16 +65,16 @@ const Header = () => {
             </Link>
 
             {/* Navigation au centre */}
-            <nav className="hidden lg:flex items-center space-x-2 laptop:space-x-3 xl:space-x-4 2xl:space-x-6">
+            <nav className="hidden lg:flex items-center space-x-1 lg:space-x-2 laptop:space-x-3 xl:space-x-4 2xl:space-x-6">
               {navItems.map((item) => {
                 const isActive = location.pathname === item.path;
                 return (
                   <Link
                     key={item.path}
                     to={item.path}
-                    className={`font-semibold text-xs lg:text-sm laptop:text-base xl:text-lg uppercase tracking-wide whitespace-nowrap transition-colors ${
-                      isActive 
-                        ? 'text-[#EF7639]' 
+                    className={`font-semibold text-xs lg:text-sm laptop:text-base xl:text-lg uppercase tracking-wide whitespace-nowrap transition-colors px-2 py-1 rounded hover:bg-white/10 ${
+                      isActive
+                        ? 'text-[#EF7639]'
                         : (isDetailPage || isScrolled)
                           ? 'text-gray-700 hover:text-[#EF7639]'
                           : 'text-white hover:text-[#EF7639]'
@@ -148,7 +148,7 @@ const Header = () => {
               <input
                 type="search"
                 placeholder="Rechercher..."
-                className={`w-full px-4 py-3 rounded-lg focus:ring-2 focus:ring-[#13316C] focus:border-transparent ${
+                className={`w-full max-w-2xl mx-auto block px-4 py-3 rounded-lg focus:ring-2 focus:ring-[#13316C] focus:border-transparent transition-all ${
                   (isDetailPage || isScrolled)
                     ? 'bg-gray-100 border border-gray-300 text-gray-900 placeholder-gray-500'
                     : 'bg-white/20 backdrop-blur-md border border-white/30 text-white placeholder-white/70 focus:bg-white/30'

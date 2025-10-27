@@ -66,12 +66,12 @@ const Hero = () => {
               
               {/* Contenu */}
               <div className="absolute inset-0 flex items-center">
-                <div className="text-left text-white px-8 md:px-16 lg:px-24 max-w-5xl">
+                <div className="text-left text-white px-4 sm:px-8 md:px-12 lg:px-24 max-w-5xl">
                   <motion.h1
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl laptop:text-6xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl font-bold mb-6 lg:mb-8"
+                    className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl laptop:text-6xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl font-bold mb-4 sm:mb-6 lg:mb-8 leading-tight"
                   >
                     {slide.title}
                   </motion.h1>
@@ -80,7 +80,7 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="text-lg sm:text-xl md:text-2xl lg:text-2xl laptop:text-3xl xl:text-3xl 2xl:text-4xl mb-8 lg:mb-10"
+                    className="text-base sm:text-lg md:text-xl lg:text-2xl laptop:text-2xl xl:text-3xl 2xl:text-4xl mb-6 sm:mb-8 lg:mb-10 leading-relaxed"
                   >
                     {slide.subtitle}
                   </motion.p>
@@ -89,20 +89,18 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
-                    className="flex flex-col sm:flex-row gap-5"
+                    className="flex flex-col sm:flex-row gap-4 md:gap-5"
                   >
-                    <Link to="/formations">
-                      <button 
-                        className="w-full sm:w-auto bg-[#13316C] hover:bg-[#0f2856] text-white font-semibold text-sm md:text-base lg:text-base laptop:text-lg rounded-lg shadow-lg transition-all"
-                        style={{ padding: '12px 24px' }}
+                    <Link to="/formations" className="w-full sm:w-auto">
+                      <button
+                        className="w-full sm:w-auto bg-[#13316C] hover:bg-[#0f2856] text-white font-semibold text-sm md:text-base lg:text-base laptop:text-lg rounded-lg shadow-lg transition-all px-6 py-3 md:px-8 md:py-3.5"
                       >
                         Découvrir nos formations
                       </button>
                     </Link>
-                    <a href="https://candidature.univ-antilles.fr" target="_blank" rel="noopener noreferrer">
-                      <button 
-                        className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-[#13316C] font-semibold text-sm md:text-base lg:text-base laptop:text-lg rounded-lg transition-all"
-                        style={{ padding: '10px 22px' }}
+                    <a href="https://candidature.univ-antilles.fr" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                      <button
+                        className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-[#13316C] font-semibold text-sm md:text-base lg:text-base laptop:text-lg rounded-lg transition-all px-6 py-2.5 md:px-8 md:py-3"
                       >
                         Candidater maintenant
                       </button>

@@ -52,25 +52,29 @@ function FrameComponent({
   );
 }
 
-export function DynamicFrameLayout({ 
-  frames: initialFrames, 
+export function DynamicFrameLayout({
+  frames: initialFrames,
   className,
   hoverSize = 6,
   gapSize = 6
 }) {
   const [frames] = useState(initialFrames);
   const [hovered, setHovered] = useState(null);
+  const [clicked, setClicked] = useState(null);
 
   const getRowSizes = () => {
-    if (hovered === null) return "4fr 4fr 4fr";
-    const { row } = hovered;
+    // Priorité au clicked sur mobile, sinon hovered sur desktop
+    const active = clicked || hovered;
+    if (active === null) return "4fr 4fr 4fr";
+    const { row } = active;
     const nonHoveredSize = (12 - hoverSize) / 2;
     return [0, 1, 2].map((r) => (r === row ? `${hoverSize}fr` : `${nonHoveredSize}fr`)).join(" ");
   };
 
   const getColSizes = () => {
-    if (hovered === null) return "4fr 4fr 4fr";
-    const { col } = hovered;
+    const active = clicked || hovered;
+    if (active === null) return "4fr 4fr 4fr";
+    const { col } = active;
     const nonHoveredSize = (12 - hoverSize) / 2;
     return [0, 1, 2].map((c) => (c === col ? `${hoverSize}fr` : `${nonHoveredSize}fr`)).join(" ");
   };
@@ -79,6 +83,27 @@ export function DynamicFrameLayout({
     const vertical = y === 0 ? "top" : y === 4 ? "center" : "bottom";
     const horizontal = x === 0 ? "left" : x === 4 ? "center" : "right";
     return `${vertical} ${horizontal}`;
+  };
+
+  const handleClick = (row, col) => {
+    // Toggle: si on clique sur le même élément, on le désélectionne
+    if (clicked?.row === row && clicked?.col === col) {
+      setClicked(null);
+    } else {
+      setClicked({ row, col });
+    }
+  };
+
+  const handleMouseEnter = (row, col) => {
+    // Si un élément est cliqué, ne pas activer le hover
+    if (!clicked) {
+      setHovered({ row, col });
+    }
+  };
+
+  const handleMouseLeave = () => {
+    // Ne désactiver que le hover, pas le clicked
+    setHovered(null);
   };
 
   return (
@@ -96,6 +121,7 @@ export function DynamicFrameLayout({
         const row = Math.floor(frame.defaultPos.y / 4);
         const col = Math.floor(frame.defaultPos.x / 4);
         const transformOrigin = getTransformOrigin(frame.defaultPos.x, frame.defaultPos.y);
+        const isActive = (clicked?.row === row && clicked?.col === col) || (hovered?.row === row && hovered?.col === col);
 
         return (
           <motion.div
@@ -105,23 +131,28 @@ export function DynamicFrameLayout({
               transformOrigin,
               transition: "transform 0.4s ease",
             }}
-            onMouseEnter={() => setHovered({ row, col })}
-            onMouseLeave={() => setHovered(null)}
+            onMouseEnter={() => handleMouseEnter(row, col)}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleClick(row, col)}
+            onTouchStart={(e) => {
+              e.preventDefault();
+              handleClick(row, col);
+            }}
           >
             <FrameComponent
               image={frame.image}
               width="100%"
               height="100%"
               className="absolute inset-0"
-              isHovered={hovered?.row === row && hovered?.col === col}
+              isHovered={isActive}
             />
-            
+
             {/* Titre et description du projet */}
-            <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
-              <h3 className="text-white text-xl font-bold leading-tight mb-2 drop-shadow-lg">
+            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 z-20 pointer-events-none">
+              <h3 className="text-white text-base md:text-xl font-bold leading-tight mb-1 md:mb-2 drop-shadow-lg">
                 {frame.title}
               </h3>
-              <p className="text-white/90 text-sm drop-shadow-md">
+              <p className="text-white/90 text-xs md:text-sm drop-shadow-md">
                 {frame.description}
               </p>
             </div>

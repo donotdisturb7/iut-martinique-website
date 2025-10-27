@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
  */
 const PageHero = ({ title, subtitle, image = '/img-iut.jpg' }) => {
   return (
-    <div className="relative h-[60vh] min-h-[400px] -mt-24 z-30">
+    <div className="relative h-[50vh] sm:h-[60vh] min-h-[350px] sm:min-h-[400px] -mt-24 z-30">
       {/* Image de fond */}
       <div className="absolute inset-0">
         <img
@@ -19,13 +19,13 @@ const PageHero = ({ title, subtitle, image = '/img-iut.jpg' }) => {
       </div>
 
       {/* Contenu */}
-      <div className="relative h-full flex items-center justify-center text-center px-4 pt-32">
+      <div className="relative h-full flex items-center justify-center text-center px-4 sm:px-6 md:px-8 pt-28 sm:pt-32">
         <div className="max-w-4xl">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-5xl lg:text-6xl laptop:text-6xl xl:text-7xl font-bold text-white mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl laptop:text-6xl xl:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight"
           >
             {title}
           </motion.h1>
@@ -34,7 +34,7 @@ const PageHero = ({ title, subtitle, image = '/img-iut.jpg' }) => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-lg md:text-xl lg:text-2xl laptop:text-2xl text-white/90"
+              className="text-base sm:text-lg md:text-xl lg:text-2xl laptop:text-2xl text-white/90 leading-relaxed"
             >
               {subtitle}
             </motion.p>

@@ -51,9 +51,9 @@ const VieEtudiante = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mb-16 max-w-4xl ml-4 lg:ml-8 xl:ml-12"
+          className="mb-12 md:mb-16 max-w-4xl"
         >
-            <p className="text-xl text-gray-700 leading-relaxed mb-6">
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
               Étudier à l'IUT de la Martinique, c'est bien plus qu'une formation académique : c'est vivre 
               une expérience humaine enrichissante dans un cadre exceptionnel. Notre campus offre un 
               environnement propice à l'épanouissement personnel et à la réussite étudiante.
@@ -71,7 +71,7 @@ const VieEtudiante = () => {
         </motion.section>
 
         {/* Grille de catégories */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-12 md:mb-16 lg:mb-20">
           {categories.map((categorie, index) => (
             <motion.div
               key={index}
@@ -112,10 +112,10 @@ const VieEtudiante = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12"
         >
-          <div className="bg-gray-50 rounded-2xl p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+          <div className="bg-gray-50 rounded-xl md:rounded-2xl p-6 md:p-8">
+            <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6">
               Services
             </h2>
             <ul className="space-y-3 text-gray-600">
@@ -138,8 +138,8 @@ const VieEtudiante = () => {
             </ul>
           </div>
 
-          <div className="bg-gray-50 rounded-2xl p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+          <div className="bg-gray-50 rounded-xl md:rounded-2xl p-6 md:p-8">
+            <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6">
               Contact
             </h2>
             <p className="text-gray-600 mb-6">

@@ -94,9 +94,9 @@ const Recherche = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mb-16 max-w-4xl ml-4 lg:ml-8 xl:ml-12"
+          className="mb-12 md:mb-16 max-w-4xl"
         >
-            <p className="text-xl text-gray-700 leading-relaxed mb-6">
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
               En lien avec sa mission de transmission du savoir, l'IUT de la Martinique est créateur de 
               connaissances à travers ses activités de recherche. Grâce aux enseignants-chercheurs, nous 
               garantissons un enseignement de haute qualité via l'adossement des formations aux compétences 
@@ -118,12 +118,12 @@ const Recherche = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="h-[500px] md:h-[600px] mb-12 rounded-2xl overflow-hidden shadow-2xl ml-4 lg:ml-8 xl:ml-12"
+          className="h-[500px] md:h-[600px] mb-12 rounded-2xl overflow-hidden shadow-2xl"
           style={{ backgroundColor: '#f9fafb' }}
         >
-          <DynamicFrameLayout 
-            frames={projetsRecherche} 
-            className="w-full h-full p-4" 
+          <DynamicFrameLayout
+            frames={projetsRecherche}
+            className="w-full h-full p-4"
             hoverSize={6}
             gapSize={6}
           />

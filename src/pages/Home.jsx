@@ -69,9 +69,9 @@ const Home = () => {
       <Hero />
 
       {/* Focus actualités */}
-      <section className="relative py-20 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
+      <section className="relative py-12 md:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <h2 className="text-[12rem] font-black text-gray-900 opacity-10 select-none">
+          <h2 className="text-[6rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] font-black text-gray-900 opacity-10 select-none whitespace-nowrap">
             ACTUALITÉS
           </h2>
         </div>
@@ -92,7 +92,7 @@ const Home = () => {
               Toutes les actualités →
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             {actualites.map((actu, index) => (
               <motion.div
                 key={actu.id}
@@ -127,9 +127,9 @@ const Home = () => {
       </section>
 
       {/* Agenda */}
-      <section className="relative py-20 bg-gradient-to-br from-[#13316C]/5 to-blue-50 overflow-hidden">
+      <section className="relative py-12 md:py-16 lg:py-20 bg-gradient-to-br from-[#13316C]/5 to-blue-50 overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <h2 className="text-[12rem] font-black text-[#13316C] opacity-[0.15] select-none">
+          <h2 className="text-[6rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] font-black text-[#13316C] opacity-[0.15] select-none whitespace-nowrap">
             AGENDA
           </h2>
         </div>
@@ -150,7 +150,7 @@ const Home = () => {
               Tous les événements →
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             {evenements.map((event, index) => (
               <motion.div
                 key={index}
@@ -187,22 +187,22 @@ const Home = () => {
         </div>
       </section>
 
-     
+
       {/* Les formations - Layout 2 colonnes */}
-      <section className="relative py-20 bg-gradient-to-br from-white to-gray-50 overflow-hidden">
+      <section className="relative py-12 md:py-16 lg:py-20 bg-gradient-to-br from-white to-gray-50 overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <h2 className="text-[10rem] font-black text-gray-900 opacity-10 select-none">
+          <h2 className="text-[5rem] sm:text-[7rem] md:text-[9rem] lg:text-[10rem] font-black text-gray-900 opacity-10 select-none whitespace-nowrap">
             FORMATIONS
           </h2>
         </div>
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Les formations
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -240,17 +240,17 @@ const Home = () => {
       </section>
 
       {/* La recherche - Fond avec image */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative py-12 md:py-16 lg:py-20 overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
-            alt="Recherche" 
+          <img
+            src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+            alt="Recherche"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 backdrop-blur-md bg-[#13316C]/85"></div>
         </div>
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <h2 className="text-[10rem] font-black text-white opacity-[0.12] select-none">
+          <h2 className="text-[5rem] sm:text-[7rem] md:text-[9rem] lg:text-[10rem] font-black text-white opacity-[0.12] select-none whitespace-nowrap">
             RECHERCHE
           </h2>
         </div>
@@ -285,14 +285,14 @@ const Home = () => {
       </section>
 
       {/* International - 2 colonnes inversées */}
-      <section className="relative py-20 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
+      <section className="relative py-12 md:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <h2 className="text-[9rem] font-black text-gray-900 opacity-10 select-none">
+          <h2 className="text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[9rem] font-black text-gray-900 opacity-10 select-none whitespace-nowrap">
             INTERNATIONAL
           </h2>
         </div>
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -333,9 +333,9 @@ const Home = () => {
       </section>
 
       {/* Vie des campus - Grille avec images */}
-      <section className="relative py-20 bg-gradient-to-br from-[#13316C]/5 to-blue-50 overflow-hidden">
+      <section className="relative py-12 md:py-16 lg:py-20 bg-gradient-to-br from-[#13316C]/5 to-blue-50 overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <h2 className="text-[8rem] font-black text-[#13316C] opacity-[0.15] select-none">
+          <h2 className="text-[4rem] sm:text-[5rem] md:text-[7rem] lg:text-[8rem] font-black text-[#13316C] opacity-[0.15] select-none whitespace-nowrap">
             VIE CAMPUS
           </h2>
         </div>
@@ -355,7 +355,7 @@ const Home = () => {
             </p>
           </motion.div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {[
               { title: 'IUT', image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80', link: '/contact' },
               { title: 'Culture', image: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80', link: '/vie-etudiante' },
@@ -393,17 +393,17 @@ const Home = () => {
 
 
       {/* L'IUT - Grande section finale */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative py-12 md:py-16 lg:py-20 overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80" 
-            alt="Campus IUT" 
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80"
+            alt="Campus IUT"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 backdrop-blur-md bg-[#13316C]/85"></div>
         </div>
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <h2 className="text-[12rem] font-black text-white opacity-[0.12] select-none">
+          <h2 className="text-[6rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] font-black text-white opacity-[0.12] select-none whitespace-nowrap">
             L'IUT
           </h2>
         </div>
@@ -438,9 +438,9 @@ const Home = () => {
       </section>
 
             {/* Chiffres clés */}
-            <section className="relative py-20 bg-gradient-to-br from-white to-gray-50 overflow-hidden">
+            <section className="relative py-12 md:py-16 lg:py-20 bg-gradient-to-br from-white to-gray-50 overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <h2 className="text-[10rem] font-black text-gray-900 opacity-10 select-none">
+          <h2 className="text-[5rem] sm:text-[7rem] md:text-[9rem] lg:text-[10rem] font-black text-gray-900 opacity-10 select-none whitespace-nowrap">
             CHIFFRES
           </h2>
         </div>
@@ -453,7 +453,7 @@ const Home = () => {
           >
             Quelques chiffres-clés
           </motion.h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
             {stats.map((stat, index) => (
               <motion.div
                 key={index}
